@@ -1,0 +1,8 @@
+{
+  "name": "git-plugin",
+  "version": "1.0.0",
+  "description": "Git utilities including Conventional Commits support",
+  "commands": [
+    "./commands/commit.md"
+  ]
+}

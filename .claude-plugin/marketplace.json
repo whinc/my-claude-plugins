@@ -1,0 +1,15 @@
+{
+  "name": "my-claude-plugins",
+  "description": "A marketplace for distributing Claude Code plugins",
+  "version": "1.0.0",
+   "owner": {
+    "name": "whincwu",
+    "email": "whincwu@163.com"
+  },
+  "plugins": [
+    {
+      "name": "git-plugin",
+      "source": "./git-plugin"
+    }
+  ]
+}
