@@ -8,7 +8,7 @@ No build, test, or lint commands are needed - this is a pure markdown repository
 
 ### Local Testing
 ```bash
-/plugin marketplace add ./.claude-plugin/marketplace.json
+/plugin marketplace add whinc/my-claude-plugins
 ```
 
 ## Plugin Architecture
