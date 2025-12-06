@@ -12,13 +12,8 @@
       "source": "./git-plugin"
     },
     {
-      "name": "skill-creator",
-      "source": {
-        "source": "github",
-        "repo": "anthropics/skills"
-      },
-      "strict": false,
-      "skills": ["./skills/skill-creator"]
+      "name": "meta-skill-plugin",
+      "source": "./meta-skill-plugin"
     }
   ]
 }
