@@ -19,7 +19,7 @@ Add this marketplace to Claude Code:
 > **Note**: This marketplace offers both plugins (with slash commands) and skills (with specialized workflows). Plugins are installed once, while skills are invoked as needed.
 
 #### git-plugin
-Git utilities with Conventional Commits support.
+Git utilities including Conventional Commits support
 
 **Installation:**
 ```bash
@@ -31,10 +31,13 @@ Git utilities with Conventional Commits support.
 /commit
 ```
 
-Creates standardized git commits by analyzing your changes and suggesting appropriate commit types.
+**Key Features:**
+- **Conventional Commits**: Create standardized commit messages that work with semantic versioning
+- **Smart Analysis**: Analyzes your changes to suggest appropriate commit types
+- **Interactive Prompting**: Guides you through creating proper commit messages
 
 #### meta-skill-plugin
-A comprehensive framework for creating custom skills that extend Claude's capabilities.
+A meta-plugin for creating skills
 
 **Installation:**
 ```bash
@@ -45,6 +48,21 @@ A comprehensive framework for creating custom skills that extend Claude's capabi
 ```bash
 skill: "skill-creator"
 ```
+
+#### react-docs-plugin
+React documentation and utilities plugin
+
+**Installation:**
+```bash
+/plugin install react-docs-plugin
+```
+
+**Usage:**
+```bash
+skill: "ahooks/SKILL"
+```
+
+
 
 ## Resources
 
@@ -59,3 +77,9 @@ skill: "skill-creator"
 ## License
 
 This marketplace is open source. Please refer to individual plugin licenses for specific terms.
+
+---
+
+*Last updated: 2025-12-06 16:02:30*
+*Plugin count: 3*
+
