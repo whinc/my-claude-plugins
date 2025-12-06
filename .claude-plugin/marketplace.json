@@ -10,6 +10,15 @@
     {
       "name": "git-plugin",
       "source": "./git-plugin"
+    },
+    {
+      "name": "skill-creator",
+      "source": {
+        "source": "github",
+        "repo": "anthropics/skills"
+      },
+      "strict": false,
+      "skills": ["./skills/skill-creator"]
     }
   ]
 }
