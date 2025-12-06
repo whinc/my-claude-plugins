@@ -1,0 +1,8 @@
+{
+  "name": "react-docs-plugin",
+  "version": "1.0.0",
+  "description": "React documentation and utilities plugin",
+  "skills": [
+    "./skills/ahooks/SKILL.md"
+  ]
+}

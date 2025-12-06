@@ -46,14 +46,9 @@ A comprehensive framework for creating custom skills that extend Claude's capabi
 skill: "skill-creator"
 ```
 
-Provides detailed guidance for creating effective skills, including:
-- Step-by-step skill creation process
-- Best practices for skill organization
-- Anatomy of a skill with bundled resources
-- Scripts, references, and asset management
-- Progressive disclosure design principles
+## Resources
 
-Transform Claude from a general-purpose agent into a specialized agent equipped with custom workflows and domain expertise.
+- [Repomix](https://github.com/yamadashy/repomix?tab=readme-ov-file#claude-code-plugins)
 
 ## Feedback & Contributing
 

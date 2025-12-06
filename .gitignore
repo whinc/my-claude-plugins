@@ -100,8 +100,7 @@ project.config.json
 .miniprogram/
 
 # Claude plugin specific
-.claude/
-claude-plugins/
+.claude/*.local.json
 
 # Testing
 __tests__/

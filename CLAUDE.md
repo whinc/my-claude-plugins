@@ -30,6 +30,21 @@ No build, test, or lint commands are needed - this is a pure markdown repository
    - Declare tool permissions in YAML frontmatter
    - Use `!command` syntax for bash execution
 
+### Plugin Directory Structure
+
+[Claude Code Plugin](https://code.claude.com/docs/en/plugins) documentation.
+
+```
+custom-claude-plugin/
+├── .claude-plugin/
+│   └── plugin.json          # Plugin metadata and command list
+├── README.md                # User-facing documentation
+└── commands/               # Command implementations
+└── skills/                  # Skill implementations
+└── hooks/                  # hooks
+└── agents/                  # sub agents
+```
+
 ## Development Workflow
 
 ### Adding New Plugins
