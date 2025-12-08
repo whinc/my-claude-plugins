@@ -101,6 +101,8 @@ skill: "ahooks"
 
 ## Development
 
+### Add a new skill for github repository
+
 1. package latest repo documentations
 ```bash
 sh ./scripts/repomix.sh
@@ -113,6 +115,15 @@ create a kill ....
 update skill 
 /plugin-dev:create-plugin ...
 ```
+
+### Plugin directories of current repository
+
+- plugins:
+    - <plugin_name> 
+        - .claude-plugin
+            - plugin.json
+        - skills
+            - <skill_name>
 
 ## License
 

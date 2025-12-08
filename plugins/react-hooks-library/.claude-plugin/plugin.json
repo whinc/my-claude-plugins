@@ -1,0 +1,14 @@
+{
+  "name": "react-hooks-library",
+  "displayName": "React Hooks Library",
+  "version": "1.0.0",
+  "description": "Documentation and guidance for popular React hooks libraries including ahooks",
+  "author": "Claude Code Community",
+  "skills": [
+    {
+      "path": "skills/ahooks.md",
+      "name": "ahooks",
+      "description": "Comprehensive documentation for ahooks - a high-quality & reliable React Hooks library with 80+ hooks for state management, effects, DOM manipulation, async operations, and more. Use when working with ahooks library or need React hooks patterns."
+    }
+  ]
+}

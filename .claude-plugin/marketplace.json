@@ -18,6 +18,10 @@
     {
       "name": "react-docs-plugin",
       "source": "./react-docs-plugin"
+    },
+    {
+      "name": "react-hooks-library",
+      "source": "./plugins/react-hooks-library"
     }
   ]
 }
