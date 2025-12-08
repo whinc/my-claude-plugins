@@ -99,11 +99,20 @@ skill: "ahooks"
 
 - [Repomix](https://github.com/yamadashy/repomix?tab=readme-ov-file#claude-code-plugins)
 
-## Feedback & Contributing
+## Development
 
-- **Report Issues**: Found a bug? Please open an issue on GitHub
-- **Request Features**: Have an idea for a new plugin? Let us know!
-- **Contributing**: Interested in contributing? Feel free to submit a Pull Request or open an issue on GitHub
+1. package latest repo documentations
+```bash
+sh ./scripts/repomix.sh
+```
+
+2. Open claude code and create a skill for packaged repo documentations through [skill development](https://github.com/anthropics/claude-code/blob/main/plugins/plugin-dev/README.md#7-skill-development) .
+
+```
+create a kill ....
+update skill 
+/plugin-dev:create-plugin ...
+```
 
 ## License
 
