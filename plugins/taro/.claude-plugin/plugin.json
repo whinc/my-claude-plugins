@@ -1,0 +1,10 @@
+{
+  "name": "taro",
+  "version": "0.1.0",
+  "description": "Provides Taro framework documentation and expertise for multi-platform development",
+  "author": {
+    "name": "Taro Plugin Developer",
+    "email": "developer@example.com"
+  },
+  "keywords": ["taro", "documentation", "multi-platform", "weapp", "mini-program"]
+}

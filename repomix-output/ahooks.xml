@@ -1,0 +1,4788 @@
+This file is a merged representation of a subset of the codebase, containing specifically included files, combined into a single document by Repomix.
+The content has been processed where content has been compressed (code blocks are separated by ⋮---- delimiter).
+
+<file_summary>
+This section contains a summary of this file.
+
+<purpose>
+This file contains a packed representation of a subset of the repository's contents that is considered the most important context.
+It is designed to be easily consumable by AI systems for analysis, code review,
+or other automated processes.
+</purpose>
+
+<file_format>
+The content is organized as follows:
+1. This summary section
+2. Repository information
+3. Directory structure
+4. Repository files (if enabled)
+5. Multiple file entries, each consisting of:
+  - File path as an attribute
+  - Full contents of the file
+</file_format>
+
+<usage_guidelines>
+- This file should be treated as read-only. Any changes should be made to the
+  original repository files, not this packed version.
+- When processing this file, use the file path to distinguish
+  between different files in the repository.
+- Be aware that this file may contain sensitive information. Handle it with
+  the same level of security as you would the original repository.
+</usage_guidelines>
+
+<notes>
+- Some files may have been excluded based on .gitignore rules and Repomix's configuration
+- Binary files are not included in this packed representation. Please refer to the Repository Structure section for a complete list of file paths, including binary files
+- Only files matching these patterns are included: packages/**/*.en-US.md
+- Files matching patterns in .gitignore are excluded
+- Files matching default ignore patterns are excluded
+- Content has been compressed - code blocks are separated by ⋮---- delimiter
+- Files are sorted by Git change count (files with more changes are at the bottom)
+</notes>
+
+</file_summary>
+
+<directory_structure>
+packages/
+  hooks/
+    src/
+      useAntdTable/
+        index.en-US.md
+      useAsyncEffect/
+        index.en-US.md
+      useBoolean/
+        index.en-US.md
+      useClickAway/
+        index.en-US.md
+      useControllableValue/
+        index.en-US.md
+      useCookieState/
+        index.en-US.md
+      useCountDown/
+        index.en-US.md
+      useCounter/
+        index.en-US.md
+      useCreation/
+        index.en-US.md
+      useDebounce/
+        index.en-US.md
+      useDebounceEffect/
+        index.en-US.md
+      useDebounceFn/
+        index.en-US.md
+      useDeepCompareEffect/
+        index.en-US.md
+      useDeepCompareLayoutEffect/
+        index.en-US.md
+      useDocumentVisibility/
+        index.en-US.md
+      useDrop/
+        index.en-US.md
+      useDynamicList/
+        index.en-US.md
+      useEventEmitter/
+        index.en-US.md
+      useEventListener/
+        index.en-US.md
+      useEventTarget/
+        index.en-US.md
+      useExternal/
+        index.en-US.md
+      useFavicon/
+        index.en-US.md
+      useFocusWithin/
+        index.en-US.md
+      useFullscreen/
+        index.en-US.md
+      useFusionTable/
+        index.en-US.md
+      useGetState/
+        index.en-US.md
+      useHistoryTravel/
+        index.en-US.md
+      useHover/
+        index.en-US.md
+      useInfiniteScroll/
+        index.en-US.md
+      useInterval/
+        index.en-US.md
+      useInViewport/
+        index.en-US.md
+      useIsomorphicLayoutEffect/
+        index.en-US.md
+      useKeyPress/
+        index.en-US.md
+      useLatest/
+        index.en-US.md
+      useLocalStorageState/
+        index.en-US.md
+      useLockFn/
+        index.en-US.md
+      useLongPress/
+        index.en-US.md
+      useMap/
+        index.en-US.md
+      useMemoizedFn/
+        index.en-US.md
+      useMount/
+        index.en-US.md
+      useMouse/
+        index.en-US.md
+      useMutationObserver/
+        index.en-US.md
+      useNetwork/
+        index.en-US.md
+      usePagination/
+        index.en-US.md
+      usePrevious/
+        index.en-US.md
+      useRafInterval/
+        index.en-US.md
+      useRafState/
+        index.en-US.md
+      useRafTimeout/
+        index.en-US.md
+      useReactive/
+        index.en-US.md
+      useRequest/
+        doc/
+          basic/
+            basic.en-US.md
+          cache/
+            cache.en-US.md
+          debounce/
+            debounce.en-US.md
+          index/
+            index.en-US.md
+          loadingDelay/
+            loadingDelay.en-US.md
+          polling/
+            polling.en-US.md
+          ready/
+            ready.en-US.md
+          refreshDeps/
+            refresyDeps.en-US.md
+          refreshOnWindowFocus/
+            refreshOnWindowFocus.en-US.md
+          retry/
+            retry.en-US.md
+          throttle/
+            throttle.en-US.md
+      useResetState/
+        index.en-US.md
+      useResponsive/
+        index.en-US.md
+      useSafeState/
+        index.en-US.md
+      useScroll/
+        index.en-US.md
+      useSelections/
+        index.en-US.md
+      useSessionStorageState/
+        index.en-US.md
+      useSet/
+        index.en-US.md
+      useSetState/
+        index.en-US.md
+      useSize/
+        index.en-US.md
+      useTextSelection/
+        index.en-US.md
+      useTheme/
+        index.en-US.md
+      useThrottle/
+        index.en-US.md
+      useThrottleEffect/
+        index.en-US.md
+      useThrottleFn/
+        index.en-US.md
+      useTimeout/
+        index.en-US.md
+      useTitle/
+        index.en-US.md
+      useToggle/
+        index.en-US.md
+      useTrackedEffect/
+        index.en-US.md
+      useUnmount/
+        index.en-US.md
+      useUnmountedRef/
+        index.en-US.md
+      useUpdate/
+        index.en-US.md
+      useUpdateEffect/
+        index.en-US.md
+      useUpdateLayoutEffect/
+        index.en-US.md
+      useVirtualList/
+        index.en-US.md
+      useWebSocket/
+        index.en-US.md
+      useWhyDidYouUpdate/
+        index.en-US.md
+  use-url-state/
+    use-url-state.en-US.md
+</directory_structure>
+
+<files>
+This section contains the contents of the repository's files.
+
+<file path="packages/hooks/src/useAntdTable/index.en-US.md">
+---
+nav:
+  path: /hooks
+---
+
+# useAntdTable
+
+`useAntdTable` is implemented based on `useRequest` and encapsulates the commonly used [Ant Design Form](https://ant.design/components/form/) and [Ant Design Table](https://ant.design/components/table/) data binding logic, and supports both antd v3 and v4.
+
+Before using it, you need to understand a few points that are different from `useRequest`:
+
+1. `service` receives two parameters, the first parameter is the paging data `{ current, pageSize, sorter, filters, extra }`, and the second parameter is the form data.
+2. The data structure returned by `service` must be `{ total: number, list: Item[] }`.
+3. Additional `tableProps` and `search` fields will be returned to manage tables and forms.
+4. When `refreshDeps` changes, it will reset `current` to the first page and re-initiate the request.
+
+## Examples
+
+The following demos are for antd v4. For v3, please refer to: https://ahooks-v2.js.org/hooks/table/use-antd-table
+
+### Table management
+
+`useAntdTable` will automatically manage the pagination data of `Table`, you only need to pass the returned `tableProps` to the `Table` component.
+
+```tsx | pure
+<Table columns={columns} rowKey="email" {...tableProps} />
+```
+
+<br />
+
+<code src="./demo/table.tsx" />
+
+### Form and Table data binding
+
+When `useAntdTable` receives the `form` instance, it will return a search object to handle form related events.
+
+- `search.type` supports switching between `simple` and `advance`
+- `search.changeType`, switch form type
+- `search.submit` submit form
+- `search.reset` reset the current form
+
+In the following example, you can try out the data binding between form and table.
+
+<code src="./demo/form.tsx" />
+
+### Default Params
+
+`useAntdTable` sets the initial value through `defaultParams`, `defaultParams` is an array, the first item is paging related parameters, and the second item is form related data. If there is a second value, we will initialize the form for you!
+
+It should be noted that the initial form data can be filled with all the form data of `simple` and `advance`, and we will help you select the form data of the currently activated type.
+
+The following example sets paging data and form data during initialization.
+
+<code src="./demo/init.tsx" />
+
+### Form Validation
+
+Before the form is submitted, we will call `form.validateFields` to validate the form data. If the verification fails, the request will not be initiated.
+
+<code src="./demo/validate.tsx" />
+
+### Data Caching
+
+By setting `cacheKey`, we can apply the data caching for the `Form` and `Table`.
+
+<code src="./demo/cache.tsx" />
+
+## API
+
+All parameters and returned results of `useRequest` are applicable to `useAntdTable`, so we won't repeat them here.
+
+```typescript
+
+type Data = { total: number; list: any[] };
+type Params = [{ current: number; pageSize: number, filters?: any, sorter?: any, extra?: any }, { [key: string]: any }];
+
+const {
+  ...,
+  tableProps: {
+    dataSource: TData['list'];
+    loading: boolean;
+    onChange: (
+      pagination: any,
+      filters?: any,
+      sorter?: any,
+      extra?: any,
+    ) => void;
+    pagination: {
+      current: number;
+      pageSize: number;
+      total: number;
+    };
+  };
+  search: {
+    type: 'simple' | 'advance';
+    changeType: () => void;
+    submit: () => void;
+    reset: () => void;
+  };
+} = useAntdTable<TData extends Data, TParams extends Params>(
+  service: (...args: TParams) => Promise<TData>,
+  {
+    ...,
+    form?: any;
+    defaultType?: 'simple' | 'advance';
+    defaultParams?: TParams,
+    defaultPageSize?: number;
+    refreshDeps?: any[];
+  }
+);
+```
+
+### Result
+
+| Property          | Description                                | Type                  |
+| ----------------- | ------------------------------------------ | --------------------- |
+| tableProps        | The data required by the `Table` component | -                     |
+| search.type       | Current form type                          | `simple` \| `advance` |
+| search.changeType | Switch form type                           | `() => void`          |
+| search.submit     | Submit form                                | `() => void`          |
+| search.reset      | Reset the current form                     | `() => void`          |
+
+### Params
+
+| Property        | Description                                                                                | Type                     | Default  |
+| --------------- | ------------------------------------------------------------------------------------------ | ------------------------ | -------- |
+| form            | `Form` instance                                                                            | -                        | -        |
+| defaultType     | Default form type                                                                          | `simple` \| `advance`    | `simple` |
+| defaultParams   | Default parameters, the first item is paging data, the second item is form data            | `[pagination, formData]` | -        |
+| defaultPageSize | Default page size                                                                          | `number`                 | `10`     |
+| refreshDeps     | Changes in `refreshDeps` will reset current to the first page and re-initiate the request. | `React.DependencyList`   | `[]`     |
+</file>
+
+<file path="packages/hooks/src/useAsyncEffect/index.en-US.md">
+---
+nav:
+  path: /hooks
+---
+
+# useAsyncEffect
+
+useEffect support async function.
+
+## 代码演示
+
+### Default usage
+
+<code src="./demo/demo1.tsx" />
+
+### Break off
+
+<code src="./demo/demo2.tsx" />
+
+## API
+
+```typescript
+function useAsyncEffect(
+  effect: () => AsyncGenerator | Promise,
+  deps: DependencyList
+);
+```
+</file>
+
+<file path="packages/hooks/src/useBoolean/index.en-US.md">
+---
+nav:
+  path: /hooks
+---
+
+# useBoolean
+
+A hook that elegantly manages boolean state.
+
+## Examples
+
+### Default usage
+
+<code src="./demo/demo1.tsx" />
+
+## API
+
+```typescript
+const [state, { toggle, set, setTrue, setFalse }] = useBoolean(
+  defaultValue?: boolean,
+);
+```
+
+### Params
+
+| Property     | Description                               | Type      | Default |
+| ------------ | ----------------------------------------- | --------- | ------- |
+| defaultValue | The default value of the state. Optional. | `boolean` | `false` |
+
+### Result
+
+| Property | Description                            | Type      |
+| -------- | -------------------------------------- | --------- |
+| state    | Current value                          | `boolean` |
+| actions  | A set of methods to update state value | `Actions` |
+
+### Actions
+
+| Property | Description          | Type                       |
+| -------- | -------------------- | -------------------------- |
+| toggle   | Toggle state         | `() => void`               |
+| set      | Set state            | `(value: boolean) => void` |
+| setTrue  | Set state to `true`  | `() => void`               |
+| setFalse | Set state to `false` | `() => void`               |
+</file>
+
+<file path="packages/hooks/src/useClickAway/index.en-US.md">
+---
+nav:
+  path: /hooks
+---
+
+# useClickAway
+
+Listen for click events outside the target element.
+
+## Examples
+
+### Default usage
+
+<code src="./demo/demo1.tsx" />
+
+### Custom DOM
+
+<code src="./demo/demo2.tsx" />
+
+### Support multiple DOM
+
+<code src="./demo/demo3.tsx" />
+
+### Listen for other events
+
+<code src="./demo/demo4.tsx" />
+
+### Support multiple events
+
+<code src="./demo/demo5.tsx"/>
+
+### Support shadow DOM
+
+<code src="./demo/demo6.tsx"/>
+
+## API
+
+```typescript
+type Target = Element | (() => Element) | React.MutableRefObject<Element>;
+type DocumentEventKey = keyof DocumentEventMap;
+
+useClickAway<T extends Event = Event>(
+  onClickAway: (event: T) => void,
+  target: Target | Target[],
+  eventName?: DocumentEventKey | DocumentEventKey[]
+);
+```
+
+### Params
+
+| Property    | Description                                    | Type                                       | Default |
+| ----------- | ---------------------------------------------- | ------------------------------------------ | ------- |
+| onClickAway | Trigger Function                               | `(event: T) => void`                       | -       |
+| target      | DOM elements or Ref or Function, support array | `Target` \| `Target[]`                     | -       |
+| eventName   | Set the event to be listened, support array    | `DocumentEventKey` \| `DocumentEventKey[]` | `click` |
+</file>
+
+<file path="packages/hooks/src/useControllableValue/index.en-US.md">
+---
+nav:
+  path: /hooks
+---
+
+# useControllableValue
+
+In some components, we need the state to be managed by itself or controlled by it's parent. `useControllableValue` is a Hook that helps you manage this kind of state.
+
+## Examples
+
+### Uncontrolled component
+
+<code src="./demo/demo1.tsx" />
+
+### Controlled component
+
+<code src="./demo/demo2.tsx" />
+
+### No value, have onChange component
+
+<code src="./demo/demo3.tsx" />
+
+## API
+
+```typescript
+const [state, setState] = useControllableValue(props: Record<string, any>, options?: Options);
+```
+
+### Result
+
+| Property | Description | Type                                                |
+| -------- | ----------- | --------------------------------------------------- |
+| state    | State       | -                                                   |
+| setState | Set state   | `(value: any \| ((prevState: any) => any)) => void` |
+
+### Params
+
+| Property | Description            | Type                  | Default |
+| -------- | ---------------------- | --------------------- | ------- |
+| props    | Component props        | `Record<string, any>` | -       |
+| options  | Optional configuration | `Options`             | -       |
+
+### Options
+
+| Property             | Description                                                                     | Type     | Default        |
+| -------------------- | ------------------------------------------------------------------------------- | -------- | -------------- |
+| defaultValue         | The default value, will be overridden by `props.defaultValue` and `props.value` | -        | -              |
+| defaultValuePropName | Custom defaultValue attribute name                                               | `string` | `defaultValue` |
+| valuePropName        | Custom value attribute name                                                     | `string` | `value`        |
+| trigger              | Custom trigger attribute name                                                   | `string` | `onChange`     |
+</file>
+
+<file path="packages/hooks/src/useCookieState/index.en-US.md">
+---
+nav:
+  path: /hooks
+---
+
+# useCookieState
+
+A Hook that store state into Cookie.
+
+## Examples
+
+### Store state into Cookie
+
+<code src="./demo/demo1.tsx" />
+
+### SetState can receive function
+
+<code src="./demo/demo2.tsx" />
+
+### Use the option property to configure Cookie
+
+<code src="./demo/demo3.tsx" />
+
+## API
+
+```typescript
+type State = string | undefined;
+
+type SetState = (
+  newValue?: State | ((prevState?: State) => State),
+  options?: Cookies.CookieAttributes,
+) => void;
+
+const [state, setState]: [State, SetState] = useCookieState(
+  cookieKey: string,
+  options?: Options,
+);
+```
+
+If you want to delete this record from document.cookie, use `setState()` or `setState(undefined)`.
+
+### Params
+
+| Property  | Description                    | Type      | Default |
+| --------- | ------------------------------ | --------- | ------- |
+| cookieKey | The key of Cookie              | `string`  | -       |
+| options   | Optional. Cookie configuration | `Options` | -       |
+
+### Result
+
+| Property | Description         | Type                    |
+| -------- | ------------------- | ----------------------- |
+| state    | Local Cookie value  | `string` \| `undefined` |
+| setState | Update Cookie value | `SetState`              |
+
+setState can update cookie options, which will be merged with the options set by `useCookieState`.
+
+`const targetOptions = { ...options, ...updateOptions }`
+
+### Options
+
+| Property     | Description                                                                                | Type                                                       | Default     |
+| ------------ | ------------------------------------------------------------------------------------------ | ---------------------------------------------------------- | ----------- |
+| defaultValue | Optional. Default value, but not store to Cookie                                           | `string` \| `undefined` \| `(() => (string \| undefined))` | `undefined` |
+| expires      | Optional. Set Cookie expiration time                                                       | `number` \| `Date`                                         | -           |
+| path         | Optional. Specify available paths                                                          | `string`                                                   | `/`         |
+| domain       | Optional. Specify available domain. Default creation domain                                | `string`                                                   | -           |
+| secure       | Optional. Specify whether the Cookie can only be transmitted over secure protocol as https | `boolean`                                                  | `false`     |
+| sameSite     | Optional. Specify whether the browser can send this Cookie along with cross-site requests  | `strict` \| `lax` \| `none`                                | -           |
+
+Options is same as [js-cookie attributes](https://github.com/js-cookie/js-cookie#cookie-attributes).
+</file>
+
+<file path="packages/hooks/src/useCountDown/index.en-US.md">
+---
+nav:
+  path: /hooks
+---
+
+# useCountDown
+
+A hook for manage countdown.
+
+## Countdown to target time
+
+<code src="./demo/demo1.tsx" />
+
+## Dynamic config
+
+<code src="./demo/demo2.tsx" />
+
+## Config leftTime
+
+<code src="./demo/demo3.tsx" />
+
+## API
+
+```typescript
+type TDate = Date | number | string | undefined;
+
+interface FormattedRes {
+  days: number;
+  hours: number;
+  minutes: number;
+  seconds: number;
+  milliseconds: number;
+}
+
+const [countdown, formattedRes] = useCountDown(
+  {
+    leftTime,
+    targetDate,
+    interval,
+    onEnd
+  }
+);
+```
+
+**Remark**
+
+The precision of useCountDown is milliseconds, which may cause the following problems
+
+- Even if the interval time is set to 1000ms, the update interval of useCountDown may not be exactly 1000ms, but around it.
+- In the second demo, countdown is generally 499x milliseconds at the beginning due to the execution delay of the program.
+
+If you only need to be accurate to the second, you can use it like this `Math.round(countdown / 1000)`.
+
+If both `leftTime` and `targetDate` are passed, the `targetDate` is ignored, the `leftTime` is dominant.
+
+### Params
+
+| Property   | Description                                  | Type         | Default |
+| ---------- | -------------------------------------------- | ------------ | ------- |
+| leftTime   | The rest of time, in milliseconds            | `number`     | -       |
+| targetDate | Target time                                  | `TDate`      | -       |
+| interval   | Time interval between ticks, in milliseconds | `number`     | `1000`  |
+| onEnd      | Function to call when countdown completes    | `() => void` | -       |
+
+### Return
+
+| Params          | Description                              | Type           |
+| --------------- | ---------------------------------------- | -------------- |
+| countdown       | Timestamp to targetDate, in milliseconds | `number`       |
+| formattedResult | Formatted countdown                      | `FormattedRes` |
+
+## Remark
+
+`leftTime`、`targetDate`、`interval`、`onEnd` support dynamic change.
+</file>
+
+<file path="packages/hooks/src/useCounter/index.en-US.md">
+---
+nav:
+  path: /hooks
+---
+
+# useCounter
+
+A hook that manage counter.
+
+## Examples
+
+### Default usage
+
+<code src="./demo/demo1.tsx" />
+
+## API
+
+```typescript
+const [current, {
+  inc,
+  dec,
+  set,
+  reset
+}] = useCounter(initialValue, { min, max });
+```
+
+### Result
+
+| Property | Description                          | Type                                                   |
+| -------- | ------------------------------------ | ------------------------------------------------------ |
+| current  | Current value                        | `number`                                               |
+| inc      | Increment, default delta is 1        | `(delta?: number) => void`                             |
+| dec      | Decrement, default delta is 1        | `(delta?: number) => void`                             |
+| set      | Set current value                    | `(value: number` \| `((c: number) => number)) => void` |
+| reset    | Reset current value to initial value | `() => void`                                           |
+
+### Params
+
+| Property     | Description   | Type     | Default |
+| ------------ | ------------- | -------- | ------- |
+| initialValue | Initial count | `number` | `0`     |
+| min          | Min count     | `number` | -       |
+| max          | Max count     | `number` | -       |
+</file>
+
+<file path="packages/hooks/src/useCreation/index.en-US.md">
+---
+nav:
+  path: /hooks
+---
+
+# useCreation
+
+`useCreation` is the replacement for `useMemo` or `useRef`.
+
+`useMemo` can't guarantee the memoized value will not be recalculated, while `useCreation` can guarantee that. As the the official document of React.js says:
+
+> **You may rely on useMemo as a performance optimization, not as a semantic guarantee.** In the future, React may choose to “forget” some previously memoized values and recalculate them on next render, e.g. to free memory for offscreen components. Write your code so that it still works without `useMemo` — and then add it to optimize performance.
+
+And similar to `useRef`, you can use `useCreation` to create some constants. But `useCreation` can avoid performance hazards.
+
+```javascript
+const a = useRef(new Subject()); // A new Subject instance is created in every render.
+const b = useCreation(() => new Subject(), []); // By using factory function, Subject is only instantiated once.
+```
+
+## Examples
+
+### Default usage
+
+<code src="./demo/demo1.tsx" />
+
+## API
+
+```javascript
+function useCreation<T>(factory: () => T, deps: any[]): T;
+```
+
+### Params
+
+| Property | Description                              | Type        | Default |
+| -------- | ---------------------------------------- | ----------- | ------- |
+| factory  | A function used for creating the object. | `() => any` | -       |
+| deps     | The dependencies list.                   | `any[]`     | -       |
+</file>
+
+<file path="packages/hooks/src/useDebounce/index.en-US.md">
+---
+nav:
+  path: /hooks
+---
+
+# useDebounce
+
+A hook that deal with the debounced value.
+
+## Examples
+
+### Default usage
+
+<code src="./demo/demo1.tsx" />
+
+## API
+
+```typescript
+const debouncedValue = useDebounce(
+  value: any,
+  options?: Options
+);
+```
+
+### Params
+
+| Property | Description                        | Type      | Default |
+| -------- | ---------------------------------- | --------- | ------- |
+| value    | The value to debounce.             | `any`     | -       |
+| options  | Config for the debounce behaviors. | `Options` | -       |
+
+### Options
+
+| Property | Description                                                         | Type      | Default |
+| -------- | ------------------------------------------------------------------- | --------- | ------- |
+| wait     | The number of milliseconds to delay.                                | `number`  | `1000`  |
+| leading  | Specify invoking on the leading edge of the timeout.                | `boolean` | `false` |
+| trailing | Specify invoking on the trailing edge of the timeout.               | `boolean` | `true`  |
+| maxWait  | The maximum time func is allowed to be delayed before it’s invoked. | `number`  | -       |
+</file>
+
+<file path="packages/hooks/src/useDebounceEffect/index.en-US.md">
+---
+nav:
+  path: /hooks
+---
+
+# useDebounceEffect
+
+Debounce your `useEffect`.
+
+## Examples
+
+### Default usage
+
+<code src="./demo/demo1.tsx" />
+
+## API
+
+```typescript
+useDebounceEffect(
+  effect: EffectCallback,
+  deps?: DependencyList,
+  options?: Options
+);
+```
+
+### Params
+
+| Property | Description                                                                   | Type             | Default |
+| -------- | ----------------------------------------------------------------------------- | ---------------- | ------- |
+| effect   | The effect callback.                                                          | `EffectCallback` | -       |
+| deps     | The dependencies list.                                                        | `DependencyList` | -       |
+| options  | Config for the debounce behaviors. See the Options section below for details. | `Options`        | -       |
+
+### Options
+
+| Property | Description                                                         | Type      | Default |
+| -------- | ------------------------------------------------------------------- | --------- | ------- |
+| wait     | The number of milliseconds to wait.                                 | `number`  | `1000`  |
+| leading  | Specify invoking on the leading edge of the timeout.                | `boolean` | `false` |
+| trailing | Specify invoking on the trailing edge of the timeout.               | `boolean` | `true`  |
+| maxWait  | The maximum time func is allowed to be delayed before it’s invoked. | `number`  | -       |
+</file>
+
+<file path="packages/hooks/src/useDebounceFn/index.en-US.md">
+---
+nav:
+  path: /hooks
+---
+
+# useDebounceFn
+
+A hook that deal with the debounced function.
+
+## Examples
+
+### Default usage
+
+<code src="./demo/demo1.tsx" />
+
+## API
+
+```typescript
+const {
+  run,
+  cancel,
+  flush
+} = useDebounceFn(
+  fn: (...args: any[]) => any,
+  options?: Options
+);
+```
+
+### Params
+
+| Property | Description                        | Type                      | Default |
+| -------- | ---------------------------------- | ------------------------- | ------- |
+| fn       | The function to debounce.          | `(...args: any[]) => any` | -       |
+| options  | Config for the debounce behaviors. | `Options`                 | -       |
+
+### Options
+
+| Property | Description                                                         | Type      | Default |
+| -------- | ------------------------------------------------------------------- | --------- | ------- |
+| wait     | The number of milliseconds to delay.                                | `number`  | `1000`  |
+| leading  | Specify invoking on the leading edge of the timeout.                | `boolean` | `false` |
+| trailing | Specify invoking on the trailing edge of the timeout.               | `boolean` | `true`  |
+| maxWait  | The maximum time func is allowed to be delayed before it’s invoked. | `number`  | -       |
+
+### Result
+
+| Property | Description                                            | Type                      |
+| -------- | ------------------------------------------------------ | ------------------------- |
+| run      | invoke and pass parameters to fn.                      | `(...args: any[]) => any` |
+| cancel   | Cancel the invocation of currently debounced function. | `() => void`              |
+| flush    | Immediately invoke currently debounced function.       | `() => void`              |
+</file>
+
+<file path="packages/hooks/src/useDeepCompareEffect/index.en-US.md">
+---
+nav:
+  path: /hooks
+---
+
+# useDeepCompareEffect
+
+Usage is the same as `useEffect`, but deps are compared with [react-fast-compare](https://www.npmjs.com/package/react-fast-compare).
+
+## Examples
+
+### Default usage
+
+<code src="./demo/demo1.tsx" />
+
+## API
+
+```typescript
+useDeepCompareEffect(
+  effect: React.EffectCallback,
+  deps: React.DependencyList
+);
+```
+</file>
+
+<file path="packages/hooks/src/useDeepCompareLayoutEffect/index.en-US.md">
+---
+nav:
+  path: /hooks
+---
+
+# useDeepCompareLayoutEffect
+
+Usage is the same as `useLayoutEffect`, but deps are compared with [react-fast-compare](https://www.npmjs.com/package/react-fast-compare).
+
+## Examples
+
+### Default usage
+
+<code src="./demo/demo1.tsx" />
+
+## API
+
+```typescript
+useDeepCompareLayoutEffect(
+  effect: React.EffectCallback,
+  deps: React.DependencyList
+);
+```
+</file>
+
+<file path="packages/hooks/src/useDocumentVisibility/index.en-US.md">
+---
+nav:
+  path: /hooks
+---
+
+# useDocumentVisibility
+
+A Hook can tell if the page is visible, refer to [visibilityState API](https://developer.mozilla.org/docs/Web/API/Document/visibilityState)
+
+## Examples
+
+<code src="./demo/demo1.tsx" />
+
+## API
+
+```typescript
+const documentVisibility = useDocumentVisibility();
+```
+
+### Result
+
+| Property           | Description                     | Type                                               |
+| ------------------ | ------------------------------- | -------------------------------------------------- |
+| documentVisibility | Whether the document is visible | `visible`\| `hidden` \| `prerender` \| `undefined` |
+</file>
+
+<file path="packages/hooks/src/useDrop/index.en-US.md">
+---
+nav:
+  path: /hooks
+---
+
+# useDrop & useDrag
+
+A pair of hooks to help you manage data transfer between drag and drop
+
+> useDrop can be used alone to accept file, text or uri dropping.
+>
+> useDrag should be used along with useDrop.
+>
+> Paste into the drop area will also be treated as content drop.
+
+## Examples
+
+### Basic Usage
+
+<code src="./demo/demo1.tsx" />
+
+### Customize Image
+
+<code src="./demo/demo2.tsx" />
+
+## API
+
+### useDrag
+
+```typescript
+useDrag<T>(
+  data: any,
+  target: (() => Element) | Element | MutableRefObject<Element>,
+  options?: DragOptions
+);
+```
+
+#### Params
+
+| Property | Description        | Type                                                        | Default |
+| -------- | ------------------ | ----------------------------------------------------------- | ------- |
+| data     | Drag data          | `any`                                                       | -       |
+| target   | DOM element or ref | `() => Element` \| `Element` \| `MutableRefObject<Element>` | -       |
+| options  | More config        | `DragOptions`                                               | -       |
+
+#### DragOptions
+
+| Property    | Description                                                   | Type                           | Default |
+| ----------- | ------------------------------------------------------------- | ------------------------------ | ------- |
+| onDragStart | On drag start callback                                        | `(e: React.DragEvent) => void` | -       |
+| onDragEnd   | On drag end callback                                          | `(e: React.DragEvent) => void` | -       |
+| dragImage   | Customize image that follow the mouse pointer during dragging | `DragImageOptions`             | -       |
+
+#### DragImageOptions
+
+| 参数    | 说明                                                                                                                                                                                                                                                                                                          | 类型                | 默认值 |
+| ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------- | ------ |
+| image   | An image Element element to use for the drag feedback image. The image will typically be an [`<img>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img) element but it can also be a [`<canvas>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/canvas) or any other visible element | `string \| Element` | -      |
+| offsetX | the horizontal offset within the image                                                                                                                                                                                                                                                                        | `number`            | 0      |
+| offsetY | the vertical offset within the image                                                                                                                                                                                                                                                                          | `number`            | 0      |
+
+### useDrop
+
+```typescript
+useDrop<T>(
+  target: (() => Element) | Element | MutableRefObject<Element>,
+  options?: DropOptions
+);
+```
+
+#### Params
+
+| Property | Description        | Type                                                        | Default |
+| -------- | ------------------ | ----------------------------------------------------------- | ------- |
+| target   | DOM element or ref | `() => Element` \| `Element` \| `MutableRefObject<Element>` | -       |
+| options  | More config        | `DropOptions`                                               | -       |
+
+#### DropOptions
+
+| Property    | Description                                 | Type                                          | Default |
+| ----------- | ------------------------------------------- | --------------------------------------------- | ------- |
+| onText      | The callback when text is dropped or pasted | `(text: string, e: React.DragEvent) => void`  | -       |
+| onFiles     | The callback when file is dropped or pasted | `(files: File[], e: React.DragEvent) => void` | -       |
+| onUri       | The callback when uri is dropped or pasted  | `(text: string, e: React.DragEvent) => void`  | -       |
+| onDom       | The callback when DOM is dropped or pasted  | `(content: any, e: React.DragEvent) => void`  | -       |
+| onDrop      | The callback when any is dropped            | `(e: React.DragEvent) => void`                | -       |
+| onPaste     | The callback when any is pasted             | `(e: React.DragEvent) => void`                | -       |
+| onDragEnter | On drag enter callback                      | `(e: React.DragEvent) => void`                | -       |
+| onDragOver  | On drag over callback                       | `(e: React.DragEvent) => void`                | -       |
+| onDragLeave | On drag leave callback                      | `(e: React.DragEvent) => void`                | -       |
+</file>
+
+<file path="packages/hooks/src/useDynamicList/index.en-US.md">
+---
+nav:
+  path: /hooks
+---
+
+# useDynamicList
+
+A hook that helps you manage dynamic list and generate unique key for each item.
+
+## Examples
+
+### Basic usage
+
+<code src="./demo/demo1.tsx" />
+
+### Using with antd Form
+
+<code src="./demo/demo2.tsx" />
+
+### Another way of writing used in antd Form
+
+<code src="./demo/demo3.tsx" />
+
+### Draggable dynamic table
+
+<code src="./demo/demo4.tsx" />
+
+## API
+
+```typescript
+const result: Result = useDynamicList(initialValue: T[]);
+```
+
+### Result
+
+| Property  | Description                              | Type                                           | Remarks                                                                                    |
+| --------- | ---------------------------------------- | ---------------------------------------------- | ------------------------------------------------------------------------------------------ |
+| list      | Current list                             | `T[]`                                          | -                                                                                          |
+| resetList | Reset list current data                  | `(list: T[]) => void`                          | -                                                                                          |
+| insert    | Add item at specific position            | `(index: number, item: T) => void`             | -                                                                                          |
+| merge     | Merge items into specific position       | `(index: number, items: T[]) => void`          | -                                                                                          |
+| replace   | Replace item at specific position        | `(index: number, item: T) => void`             | -                                                                                          |
+| remove    | Delete specific item                     | `(index: number) => void`                      | -                                                                                          |
+| move      | Move item from old index to new index    | `(oldIndex: number, newIndex: number) => void` | -                                                                                          |
+| getKey    | Get the uuid of specific item            | `(index: number) => number`                    | -                                                                                          |
+| getIndex  | Retrieve index from uuid                 | `(key: number) => number`                      | -                                                                                          |
+| sortList  | Sort the form data(using with antd form) | `(list: T[]) => T[]`                           | see[`Another way of writing used in antd Form`](#another-way-of-writing-used-in-antd-form) |
+| push      | Push new item at the end of list         | `(item: T) => void`                            | -                                                                                          |
+| pop       | Remove the last item from the list       | `() => void`                                   | -                                                                                          |
+| unshift   | Add new item at the front of the list    | `(item: T) => void`                            | -                                                                                          |
+| shift     | Remove the first item from the list      | `() => void`                                   | -                                                                                          |
+
+### Params
+
+| Property     | Description               | Type  | Default |
+| ------------ | ------------------------- | ----- | ------- |
+| initialValue | Initial value of the list | `T[]` | `[]`    |
+</file>
+
+<file path="packages/hooks/src/useEventEmitter/index.en-US.md">
+---
+nav:
+  path: /hooks
+---
+
+# useEventEmitter
+
+Sometimes it is difficult to pass events between multiple components. By using EventEmitter, this can be simplified.
+
+To get an instance of `EventEmitter`, you can call `useEventEmitter` in React components.
+
+```js
+const event$ = useEventEmitter();
+```
+
+> If the component renders multiple times, the return value of `useEventEmitter` in every render process will stay unchanged and no extra `EventEmitter` instance will be created.
+
+Then we can share `event$` to other components via `props` or `Context`. To push a event, just call the `emit` method of `EventEmitter`. To subscribe to a series of events, call the `useSubscription` method.
+
+```js
+event$.emit('hello');
+```
+
+```js
+event$.useSubscription(val => {
+  console.log(val);
+});
+```
+
+> `useSubscription` will automatically register the subscription and unsubscription.
+
+If you want to let the child component notify the parent component, you can just use `props` to pass a `onEvent` function. And if you want to let the parent component notify the child component, you can use `forwardRef` to retrieve the ref of child component. `useEventEmitter` is most suitable for event management among multiple components or between two components which are far away.
+
+## Examples
+
+### Parent component shares a event
+
+<code src="./demo/demo1.tsx" />
+
+## API
+
+### Params
+
+```typescript
+const result: Result = useEventEmitter<T>();
+```
+
+### Result
+
+| Property        | Description                   | Type                                   |
+| --------------- | ----------------------------- | -------------------------------------- |
+| emit            | Emit a new event.             | `(val: T) => void`                     |
+| useSubscription | Subscribe to a event emitter. | `(callback: (val: T) => void) => void` |
+</file>
+
+<file path="packages/hooks/src/useEventListener/index.en-US.md">
+---
+nav:
+  path: /hooks
+---
+
+# useEventListener
+
+Use addEventListener elegant by Hook.
+
+## Examples
+
+### Default usage
+
+<code src="./demo/demo1.tsx" />
+
+### Listen for keydown
+
+<code src="./demo/demo2.tsx" />
+
+### Listen for multiple events
+
+<code src="./demo/demo3.tsx" />
+
+## API
+
+```typescript
+useEventListener(
+  eventName: string,
+  handler: (ev: Event) => void,
+  options?: Options,
+);
+```
+
+### Property
+
+| Property  | Description            | type                   | default |
+| --------- | ---------------------- | ---------------------- | ------- |
+| eventName | Event name             | `string` \| `string[]` | -       |
+| handler   | Callback function      | `(ev: Event) => void`  | -       |
+| options   | More options(optional) | `Options`              | -       |
+
+### Options
+
+| Property | Description                                                                                                                                                                                                                                     | type                                                                                          | default  |
+| -------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- | -------- |
+| target   | DOM element or ref                                                                                                                                                                                                                              | `(() => Element)` \| `Element` \| `React.MutableRefObject<Element>` \| `Window` \| `Document` | `window` |
+| capture  | Optional, a Boolean indicating that events of this type will be dispatched to the registered listener before being dispatched to any EventTarget beneath it in the DOM tree.                                                                    | `boolean`                                                                                     | `false`  |
+| once     | Optional, A Boolean indicating that the listener should be invoked at most once after being added. If true, the listener would be automatically removed when invoked.                                                                           | `boolean`                                                                                     | `false`  |
+| passive  | Optional, A Boolean which, if true, indicates that the function specified by listener will never call preventDefault(). If a passive listener does call preventDefault(), the user agent will do nothing other than generate a console warning. | `boolean`                                                                                     | `false`  |
+| enable   | Optional, Whether to enable listening.                                                                                                                                                                                                          | `boolean`                                                                                     | `true`   |
+</file>
+
+<file path="packages/hooks/src/useEventTarget/index.en-US.md">
+---
+nav:
+  path: /hooks
+---
+
+# useEventTarget
+
+A hook that encapsulates `onChange` and `value` logic for form controls that obtains value through `event.target.value`. It also supports custom transformer and reset functionalities.
+
+## Example
+
+### Basic Usage
+
+<code src="./demo/demo1.tsx" />
+
+### Custom transformer
+
+<code src="./demo/demo2.tsx" />
+
+## API
+
+```typescript
+const [value, { onChange, reset }] = useEventTarget<T, U>(Options<T, U>);
+```
+
+### Result
+
+| Property | Description                                 | Type                                    |
+| -------- | ------------------------------------------- | --------------------------------------- |
+| value    | component value                             | `T`                                     |
+| onChange | callback when value changes                 | `(e: { target: { value: T } }) => void` |
+| reset    | function to reset the value to initialValue | `() => void`                            |
+
+### Options
+
+| Property     | Description                                | Type              | Default |
+| ------------ | ------------------------------------------ | ----------------- | ------- |
+| initialValue | initial value                              | `T`               | -       |
+| transformer  | custom transform function applied to value | `(value: U) => T` | -       |
+</file>
+
+<file path="packages/hooks/src/useExternal/index.en-US.md">
+---
+nav:
+  path: /hooks
+---
+
+# useExternal
+
+Dynamically load JS or CSS, useExternal can ensure that the resource are globally unique.
+
+## Example
+
+### Basic Usage
+
+<code src="./demo/demo1.tsx" />
+
+### Load CSS
+
+<code src="./demo/demo2.tsx" />
+
+## API
+
+```typescript
+const status = useExternal(path: string, options?: Options);
+```
+
+### Result
+
+| Params | Description                                                                                  | Type     |
+| ------ | -------------------------------------------------------------------------------------------- | -------- |
+| status | The progress of loading the external resources, support `unset`, `loading`, `ready`, `error` | `string` |
+
+### Params
+
+| Params | Description                       | Type     | Default |
+| ------ | --------------------------------- | -------- | ------- |
+| path   | The url of the external resources | `string` | -       |
+
+### Options
+
+| Params         | Description                                                                                                          | Type                | Default |
+| -------------- | -------------------------------------------------------------------------------------------------------------------- | ------------------- | ------- |
+| type           | The type of external resources which need to load, support `js`/`css`, if no type, it will deduced according to path | `string`            | -       |
+| js             | Attributes supported by `script`                                                                                     | `HTMLScriptElement` | -       |
+| css            | Attributes supported by `link`                                                                                       | `HTMLStyleElement`  | -       |
+| keepWhenUnused | Allow resources to remain after they have lost their references                                                      | `boolean`           | `false` |
+</file>
+
+<file path="packages/hooks/src/useFavicon/index.en-US.md">
+---
+nav:
+  path: /hooks
+---
+
+# useFavicon
+
+A hook that set the favicon of the page.
+
+## Example
+
+### Basic Usage
+
+<code src="./demo/demo1.tsx" />
+
+## API
+
+```typescript
+useFavicon(href: string);
+```
+
+### Params
+
+| Params | Description                                  | Type     | Default |
+| ------ | -------------------------------------------- | -------- | ------- |
+| href   | favicon URL, support `svg`/`png`/`ico`/`gif` | `string` | -       |
+
+## FAQ
+
+### It doesn't work in Safari?
+
+Safari cannot set the favicon dynamically.
+
+> Apple intentionally do not want the ability to script favicons. See https://bugs.webkit.org/show_bug.cgi?id=95979#c2
+
+Related issues: [#2126](https://github.com/alibaba/hooks/issues/2126)
+</file>
+
+<file path="packages/hooks/src/useFocusWithin/index.en-US.md">
+---
+nav:
+  path: /hooks
+---
+
+# useFocusWithin
+
+Monitor whether the current focus is within a certain area, Same as css attribute [:focus-within](https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-within).
+
+## Examples
+
+### Default usage
+
+<code src="./demo/demo1.tsx" />
+
+### Pass in DOM element
+
+<code src="./demo/demo2.tsx" />
+
+## API
+
+```typescript
+const isFocusWithin = useFocusWithin(
+  target,
+  {
+   onFocus,
+   onBlur,
+   onChange
+  }
+);
+```
+
+### Params
+
+| Property | Description        | Type                                                        | Default |
+| -------- | ------------------ | ----------------------------------------------------------- | ------- |
+| target   | DOM element or ref | `() => Element` \| `Element` \| `MutableRefObject<Element>` | -       |
+| options  | More config        | `Options`                                                   | -       |
+
+### Options
+
+| Property | Description                             | Type                               | Default |
+| -------- | --------------------------------------- | ---------------------------------- | ------- |
+| onFocus  | Callback to be executed on focus        | `(e: FocusEvent) => void`          | -       |
+| onBlur   | Callback to be executed on blur         | `(e: FocusEvent) => void`          | -       |
+| onChange | Callback to be executed on focus change | `(isFocusWithin: boolean) => void` | -       |
+
+### Result
+
+| Property      | Description                              | Type      |
+| ------------- | ---------------------------------------- | --------- |
+| isFocusWithin | Whether the focus is in the current area | `boolean` |
+</file>
+
+<file path="packages/hooks/src/useFullscreen/index.en-US.md">
+---
+nav:
+  path: /hooks
+---
+
+# useFullscreen
+
+manages DOM full screen.
+
+## Examples
+
+### Default usage
+
+<code src="./demo/demo1.tsx" />
+
+### Image full screen
+
+<code src="./demo/demo2.tsx" />
+
+### Page full screen
+
+<code src="./demo/demo3.tsx" />
+
+### Coexist with other full screen operations
+
+<code src="./demo/demo4.tsx" />
+
+## API
+
+```typescript
+const [isFullscreen, {
+  enterFullscreen,
+  exitFullscreen,
+  toggleFullscreen,
+  isEnabled,
+}] = useFullScreen(
+  target,
+  options?: Options
+);
+```
+
+### Params
+
+| Property | Description        | Type                                                        | Default |
+| -------- | ------------------ | ----------------------------------------------------------- | ------- |
+| target   | DOM element or ref | `Element` \| `() => Element` \| `MutableRefObject<Element>` | -       |
+| options  | Setting            | `Options`                                                   | -       |
+
+### Options
+
+| Property       | Description                                                                                                                   | Type                                                   | Default |
+| -------------- | ----------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------ | ------- |
+| onExit         | Exit full screen trigger                                                                                                      | `() => void`                                           | -       |
+| onEnter        | Enter full screen trigger                                                                                                     | `() => void`                                           | -       |
+| pageFullscreen | Whether to enable full screen of page. If its type is object, it can set `className` and `z-index` of the full screen element | `boolean` \| `{ className?: string, zIndex?: number }` | `false` |
+
+### Result
+
+| Property         | Description          | Type         |
+| ---------------- | -------------------- | ------------ |
+| isFullscreen     | Is full screen       | `boolean`    |
+| enterFullscreen  | Enter full screen    | `() => void` |
+| exitFullscreen   | Exit full screen     | `() => void` |
+| toggleFullscreen | Toggle full screen   | `() => void` |
+| isEnabled        | Is enable screenfull | `boolean`    |
+</file>
+
+<file path="packages/hooks/src/useFusionTable/index.en-US.md">
+---
+nav:
+  path: /hooks
+---
+
+# useFusionTable
+
+useFusionTable encapsulates the commonly used [Fusion Form](https://fusion.design/pc/component/basic/form) and [Fusion Table](https://fusion.design/pc/component/basic/table) data binding logic.
+
+`useFusionTable` is implemented based on `useRequest`. Before using it, you need to understand a few points that are different from `useRequest`:
+
+1. `service` receives two parameters, the first parameter is the paging data `{ current, pageSize, sorter, filters }`, and the second parameter is the form data.
+2. The data structure returned by `service` must be `{ total: number, list: Item[] }`.
+3. Additional `tableProps`、`paginationProps` and `search` fields will be returned to manage tables and forms.
+4. When `refreshDeps` changes, it will reset `current` to the first page and re-initiate the request.
+
+## Examples
+
+### Table management
+
+`useFusionTable` will automatically manage the pagination data of `Table`, you only need to pass the returned `tableProps` and `paginationProps` to the corresponding components.
+
+```tsx | pure
+<Table columns={columns} rowKey="email" {...tableProps} />
+<Pagination {...paginationProps} />
+```
+
+<br />
+
+<code src="./demo/table.tsx" />
+
+### Form and Table data binding
+
+When `useFusionTable` receives the `field` instance, it will return a search object to handle form related events.
+
+- `search.type` supports switching between `simple` and `advance`
+- `search.changeType`, switch form type
+- `search.submit` submit form
+- `search.reset` reset the current form
+
+In the following example, you can experience the data binding between form and table.
+
+<code src="./demo/form.tsx" />
+
+### Default Params
+
+`useFusionTable` sets the initial value through `defaultParams`, `defaultParams` is an array, the first item is paging related parameters, and the second item is form related data. If there is a second value, we will initialize the form for you!
+
+It should be noted that the initial form data can be filled with all the form data of `simple` and `advance`, and we will help you select the form data of the currently activated type.
+
+The following example sets paging data and form data during initialization.
+
+<code src="./demo/init.tsx" />
+
+### Form Validation
+
+Before the form is submitted, we will automatically validate the form data. If the verification fails, the request will not be initiated.
+
+<code src="./demo/validate.tsx" />
+
+### Data Caching
+
+By setting `cacheKey`, we can apply the data caching for the `Form` and `Table` .
+
+<code src="./demo/cache.tsx" />
+
+## API
+
+All parameters and returned results of `useRequest` are applicable to `useFusionTable`, so we won't repeat them here.
+
+```typescript
+
+type Data = { total: number; list: any[] };
+type Params = [{ current: number; pageSize: number, filter?: any, sorter?: any }, { [key: string]: any }];
+
+const {
+  ...,
+  tableProps: {
+    dataSource: TData['list'];
+    loading: boolean;
+    onSort: (dataIndex: string, order: string) => void;
+    onFilter: (filterParams: any) => void;
+  };
+  paginationProps: {
+    onChange: (current: number) => void;
+    onPageSizeChange: (size: number) => void;
+    current: number;
+    pageSize: number;
+    total: number;
+  };
+  search: {
+    type: 'simple' | 'advance';
+    changeType: () => void;
+    submit: () => void;
+    reset: () => void;
+  };
+} = useFusionTable<TData extends Data, TParams extends Params>(
+  service: (...args: TParams) => Promise<TData>,
+  {
+    ...,
+    field?: any;
+    defaultType?: 'simple' | 'advance';
+    defaultParams?: TParams,
+    defaultPageSize?: number;
+    refreshDeps?: any[];
+  }
+);
+```
+
+### Result
+
+| Property          | Description                                     | Type                  |
+| ----------------- | ----------------------------------------------- | --------------------- |
+| tableProps        | The data required by the `Table` component      | -                     |
+| paginationProps   | The data required by the `Pagination` component | -                     |
+| search.type       | Current form type                               | `simple` \| `advance` |
+| search.changeType | Switch form type                                | `() => void`          |
+| search.submit     | Submit form                                     | `() => void`          |
+| search.reset      | Reset the current form                          | `() => void`          |
+
+### Params
+
+| Property        | Description                                                                                | Type                     | Default  |
+| --------------- | ------------------------------------------------------------------------------------------ | ------------------------ | -------- |
+| field           | `Form` instance                                                                            | -                        | -        |
+| defaultType     | Default form type                                                                          | `simple` \| `advance`    | `simple` |
+| defaultParams   | Default parameters, the first item is paging data, the second item is form data            | `[pagination, formData]` | -        |
+| defaultPageSize | Default page size                                                                          | `number`                 | `10`     |
+| refreshDeps     | Changes in `refreshDeps` will reset current to the first page and re-initiate the request. | `React.DependencyList`   | `[]`     |
+</file>
+
+<file path="packages/hooks/src/useGetState/index.en-US.md">
+---
+nav:
+  path: /hooks
+---
+
+# useGetState
+
+Add a getter method to the return value of `React.useState` to get the latest value
+
+## Examples
+
+### Default usage
+
+<code src="./demo/demo1.tsx" />
+
+## TypeScript definition
+
+```typescript
+import { Dispatch, SetStateAction } from 'react';
+type GetStateAction<S> = () => S;
+
+function useGetState<S>(initialState: S | (() => S)): [S, Dispatch<SetStateAction<S>>, GetStateAction<S>];
+function useGetState<S = undefined>(): [S | undefined, Dispatch<SetStateAction<S | undefined>>, GetStateAction<S | undefined>];
+```
+
+## API
+
+```typescript
+const [state, setState, getState] = useGetState<S>(initialState)
+```
+</file>
+
+<file path="packages/hooks/src/useHistoryTravel/index.en-US.md">
+---
+nav:
+  path: /hooks
+---
+
+# useHistoryTravel
+
+A hook to manage state change history. It provides encapsulation methods to travel through the history.
+
+## Examples
+
+### Basic usage
+
+<code src="./demo/demo1.tsx" />
+
+### Todo List
+
+<code src="./demo/demo2.tsx" />
+
+### Limit maximum history length
+
+<code src="./demo/demo3.tsx" />
+
+## API
+
+```typescript
+const {
+  value,
+  setValue,
+  backLength,
+  forwardLength,
+  go,
+  back,
+  forward
+} = useHistoryTravel<T>(initialValue?: T, maxLength: number = 0 );
+```
+
+### Params
+
+| Property     | Description                                                                                                               | Type     | Default     |
+| ------------ | ------------------------------------------------------------------------------------------------------------------------- | -------- | ----------- |
+| initialValue | Optional initial value                                                                                                    | `T`      | -           |
+| maxLength    | Optional limit the maximum length of history records. If the maximum length is exceeded, the first record will be deleted | `number` | 0 unlimited |
+
+### Result
+
+| Property      | Description                                                                       | Type                            |
+| ------------- | --------------------------------------------------------------------------------- | ------------------------------- |
+| value         | Current value                                                                     | `T`                             |
+| setValue      | Set value                                                                         | `(value: T) => void`            |
+| backLength    | The length of backward history                                                    | `number`                        |
+| forwardLength | The length of forward history                                                     | `number`                        |
+| go            | Move between the history, move backward on step < 0，and move forward on step > 0 | `(step: number) => void`        |
+| back          | Move one step backward                                                            | `() => void`                    |
+| foward        | Move one step forward                                                             | `() => void`                    |
+| reset         | Reset history to initial value by default or provide a new initial value.         | `(newInitialValue?: T) => void` |
+</file>
+
+<file path="packages/hooks/src/useHover/index.en-US.md">
+---
+nav:
+  path: /hooks
+---
+
+# useHover
+
+A hook that tracks whether the element is being hovered.
+
+## Examples
+
+### Default usage
+
+<code src="./demo/demo1.tsx" />
+
+### Pass in DOM element
+
+<code src="./demo/demo2.tsx" />
+
+## API
+
+```javascript
+const isHovering = useHover(
+  target,
+  {
+   onEnter,
+   onLeave,
+   onChange
+  }
+);
+```
+
+### Params
+
+| Property | Description        | Type                                                        | Default |
+| -------- | ------------------ | ----------------------------------------------------------- | ------- |
+| target   | DOM element or ref | `() => Element` \| `Element` \| `MutableRefObject<Element>` | -       |
+| options  | More config        | `Options`                                                   | -       |
+
+### Options
+
+| Property | Description                             | Type                            | Default |
+| -------- | --------------------------------------- | ------------------------------- | ------- |
+| onEnter  | Callback to be executed on mouse hover  | `() => void`                    | -       |
+| onLeave  | Callback to be executed on mouse leave  | `() => void`                    | -       |
+| onChange | Callback to be executed on hover change | `(isHovering: boolean) => void` | -       |
+
+### Result
+
+| Property   | Description                          | Type      |
+| ---------- | ------------------------------------ | --------- |
+| isHovering | Whether the element is being hovered | `boolean` |
+</file>
+
+<file path="packages/hooks/src/useInfiniteScroll/index.en-US.md">
+---
+nav:
+  path: /hooks
+---
+
+# useInfiniteScroll
+
+useInfiniteScroll encapsulates the common infinite scroll logic.
+
+```js
+const { data, loading, loadingMore, loadMore } = useInfiniteScroll(service);
+```
+
+The first parameter `service` of useInfiniteScroll is an asynchronous function. The input and output parameters of this function have the following conventions:
+
+1. The data returned by `service` must contain a `list` array, the type is `{ list: any[], ...rest }`
+2. The input parameter of `service` is the latest merged `data`
+
+If the data returned for the first request is `{ list: [1, 2, 3], nextId: 4 }`, the data returned for the second time is `{ list: [4, 5, 6], nextId: 7 }` , then we will automatically merge `list`, and the merged `data` will be `{ list: [1, 2, 3, 4, 5, 6], nextId: 7 }`.
+
+## Basic usage
+
+In the first example, we demonstrate the implementation of a most basic infinite scroll.
+
+<code src="./demo/default.tsx" />
+
+## Pagination
+
+In the data fixation scenario, we sometimes use `page` and `pageSize` to request new data.
+
+<code src="./demo/pagination.tsx" />
+
+## Scrolling to automatically load
+
+In the infinite scrolling scenario, the most common case is to automatically load when scrolling to the bottom. By configuring the following properties, you can achieve scrolling to automatically load.
+
+- `options.target` specifies the parent element, The parent element needs to set a fixed height and support internal scrolling
+- `options.isNoMore` determines if there is no more data
+- `options.direction` determines the direction of scrolling, the default is `bottom`
+
+the scroll to bottom demo
+<code src="./demo/scroll.tsx" />
+
+the scroll to top demo
+<code src="./demo/scrollTop.tsx" />
+
+## Data reset
+
+The data can be reset by `reload`. The following example shows that after the `filter` changes, the data is reset to the first page.
+
+<code src="./demo/reload.tsx" />
+
+The above code can be implemented with `reloadDeps` syntax sugar. When `reloadDeps` changes, `reload` will be triggered automatically.
+
+```ts
+const result = useInfiniteScroll(service, {
+  reloadDeps: [keyword]
+});
+```
+
+## Data mutation
+
+With `mutate`, we can directly modify the current `data`. The following example demonstrates deleting a record from the data.
+
+<code src="./demo/mutate.tsx" />
+
+## API
+
+```ts
+export type Data = { list: any[];[key: string]: any; };
+export type Service<TData extends Data> = (currentData?: TData) => Promise<TData>;
+
+const {
+  data: TData;
+  loading: boolean;
+  loadingMore: boolean;
+  error?: Error;
+  noMore: boolean;
+  loadMore: () => void;
+  loadMoreAsync: () => Promise<TData>;
+  reload: () => void;
+  reloadAsync: () => Promise<TData>;
+  cancel: () => void;
+  mutate: (data?: TData) => void;
+} = useInfiniteScroll<TData extends Data>(
+  service: (currentData?: TData) => Promise<TData>,
+  {
+    target?: BasicTarget;
+    isNoMore?: (data?: TData) => boolean;
+    threshold?: number;
+    manual?: boolean;
+    reloadDeps?: DependencyList;
+    onBefore?: () => void;
+    onSuccess?: (data: TData) => void;
+    onError?: (e: Error) => void;
+    onFinally?: (data?: TData, e?: Error) => void;
+  }
+);
+```
+
+### Result
+
+| Property      | Description                                                                                                                                       | Type                     |
+| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------ |
+| data          | The data returned by the service, where the `list` attribute is the aggregated data                                                               | `TData` \| `undefined`   |
+| loading       | Is the first request in progress                                                                                                                  | `boolean`                |
+| loadingMore   | Is more data request in progress                                                                                                                  | `boolean`                |
+| noMore        | Whether there is no more data, it will take effect after configuring `options.isNoMore`                                                           | `boolean`                |
+| error         | Request error message                                                                                                                             | `Error`                  |
+| loadMore      | Load more data, it will automatically catch the exception, and handle it through `options.onError`                                                | `() => void`             |
+| loadMoreAsync | Load more data, which is consistent with the behavior of `loadMore`, but returns Promise, so you need to handle the exception yourself            | `() => Promise<TData>`   |
+| reload        | Load the first page of data, it will automatically catch the exception, and handle it through `options.onError`                                   | `() => void`             |
+| reloadAsync   | Load the first page of data, which is consistent with the behavior of `reload`, but returns Promise, so you need to handle the exception yourself | `() => Promise<TData>`   |
+| mutate        | Modify `data` directly                                                                                                                            | `(data?: TData) => void` |
+| cancel        | Ignore the current promise response                                                                                                               | `() => void`             |
+
+### Options
+
+| Property   | Description                                                                                                                                                                                                                                          | Type                                                        | Default  |
+| ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------- | -------- |
+| target     | specifies the parent element. If it exists, it will trigger the `loadMore` when scrolling to the bottom. Needs to work with `isNoMore` to know when there is no more data to load. **when target is document, it is defined as the entire viewport** | `() => Element` \| `Element` \| `MutableRefObject<Element>` | -        |
+| isNoMore   | determines if there is no more data, the input parameter is the latest merged `data`                                                                                                                                                                 | `(data?: TData) => boolean`                                 | -        |
+| threshold  | The pixel threshold to the bottom for the scrolling to load                                                                                                                                                                                          | `number`                                                    | `100`    |
+| direction  | The direction of the scrolling                                                                                                                                                                                                                       | `bottom` \|`top`                                            | `bottom` |
+| reloadDeps | When the content of the array changes, `reload` will be triggered                                                                                                                                                                                    | `any[]`                                                     | -        |
+| manual     | <ul><li> The default is `false`. That is, the service is automatically executed during initialization. </li><li>If set to `true`, you need to manually call `run` or `runAsync` to trigger execution </li></ul>                                      | `boolean`                                                   | `false`  |
+| onBefore   | Triggered before service execution                                                                                                                                                                                                                   | `() => void`                                                | -        |
+| onSuccess  | Triggered when service resolve                                                                                                                                                                                                                       | `(data: TData) => void`                                     | -        |
+| onError    | Triggered when service reject                                                                                                                                                                                                                        | `(e: Error) => void`                                        | -        |
+| onFinally  | Triggered when service execution is complete                                                                                                                                                                                                         | `(data?: TData, e?: Error) => void`                         | -        |
+</file>
+
+<file path="packages/hooks/src/useInterval/index.en-US.md">
+---
+nav:
+  path: /hooks
+---
+
+# useInterval
+
+A hook that handles the `setInterval` timer function.
+
+## Examples
+
+### Default usage
+
+<code src="./demo/demo1.tsx" />
+
+### Advanced usage
+
+<code src="./demo/demo2.tsx" />
+
+## API
+
+```typescript
+useInterval(
+  fn: () => void,
+  delay?: number | undefined,
+  options?: Options
+): fn: () => void;
+```
+
+### Params
+
+| Property | Description                                                                                                                                                   | Type                    |
+| -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
+| fn       | The function to be executed every `delay` milliseconds.                                                                                                       | `() => void`            |
+| delay    | The time in milliseconds, the timer should delay in between executions of the specified function. The timer will be cancelled if delay is set to `undefined`. | `number` \| `undefined` |
+| options  | Config of the interval behavior.                                                                                                                              | `Options`               |
+
+### Options
+
+| Property  | Description                                                            | Type      | Default |
+| --------- | ---------------------------------------------------------------------- | --------- | ------- |
+| immediate | Whether the function should be executed immediately on first execution | `boolean` | `false` |
+
+### Result
+
+| Property      | Description    | Type         |
+| ------------- | -------------- | ------------ |
+| clearInterval | clear interval | `() => void` |
+</file>
+
+<file path="packages/hooks/src/useInViewport/index.en-US.md">
+---
+nav:
+  path: /hooks
+---
+
+# useInViewport
+
+Observe whether the element is in the visible area, and the visible area ratio of the element. More information refer to [Intersection Observer API](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API).
+
+## Examples
+
+### Default usage
+
+<code src="./demo/demo1.tsx" />
+
+### Observe the visible area ratio of element
+
+<code src="./demo/demo2.tsx" />
+
+### Listening content scrolling selection menu
+
+<code src="./demo/demo3.tsx" />
+
+## API
+
+```typescript
+type Target = Element | (() => Element) | React.MutableRefObject<Element>;
+
+const [inViewport, ratio] = useInViewport(
+  target: Target | Target[],
+  options?: Options
+);
+```
+
+### Params
+
+| Property | Description                        | Type                     | Default |
+| -------- | ---------------------------------- | ------------------------ | ------- |
+| target   | DOM elements or Ref, support array | `Target` \| `Target[]`   | -       |
+| options  | Setting                            | `Options` \| `undefined` | -       |
+
+### Options
+
+More information refer to [Intersection Observer API](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API)
+
+| Property   | Description                                                                                                                                                                       | Type                                                                                 | Default |
+| ---------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ | ------- |
+| threshold  | Either a single number or an array of numbers which indicate at what percentage of the target's visibility the ratio should be executed                                           | `number` \| `number[]`                                                               | -       |
+| rootMargin | Margin around the root                                                                                                                                                            | `string`                                                                             | -       |
+| root       | The element that is used as the viewport for checking visibility of the target. Must be the ancestor of the target. Defaults to the browser viewport if not specified or if null. | `Element` \| `Document` \| `() => (Element/Document)` \| `MutableRefObject<Element>` | -       |
+| callback   | Triggered when the callback of `IntersectionObserver` is called                                                                                                                   | `(entry: IntersectionObserverEntry) => void`                                         | -       |
+
+### Result
+
+| Property   | Description                                                                              | Type                     |
+| ---------- | ---------------------------------------------------------------------------------------- | ------------------------ |
+| inViewport | Is visible                                                                               | `boolean` \| `undefined` |
+| ratio      | Current visible ratio, updated every time the node set by `options.threshold` is reached | `number` \| `undefined`  |
+</file>
+
+<file path="packages/hooks/src/useIsomorphicLayoutEffect/index.en-US.md">
+---
+nav:
+  path: /hooks
+---
+
+# useIsomorphicLayoutEffect
+
+In SSR mode, the following warning will appear when useLayoutEffect is used
+
+> ⚠️ Warning: useLayoutEffect does nothing on the server, because its effect cannot be encoded into the server renderer's output format. This will lead to a mismatch between the initial, non-hydrated UI and the intended UI. To avoid this, useLayoutEffect should only be used in components that render exclusively on the client. See https://fb.me/react-uselayouteffect-ssr for common fixes.
+
+To avoid this warning, useIsomorphicLayoutEffect can be used instead of useLayoutEffect.
+
+The source code of useIsomorphicLayoutEffect is:
+
+```javascript
+const useIsomorphicLayoutEffect = isBrowser ? useLayoutEffect : useEffect;
+```
+
+Return useLayoutEffect for browser environment and useEffect for other environments.
+
+For more information, please refer to [useLayoutEffect and SSR](https://medium.com/@alexandereardon/uselayouteffect-and-ssr-192986cdcf7a)
+</file>
+
+<file path="packages/hooks/src/useKeyPress/index.en-US.md">
+---
+nav:
+  path: /hooks
+---
+
+# useKeyPress
+
+Listen for the keyboard press, support key combinations, and support alias.
+
+## Examples
+
+### Basic usage
+
+<code src="./demo/demo1.tsx" />
+
+### Combination keys
+
+<code src="./demo/demo6.tsx" />
+
+### Exact match
+
+<code src="./demo/demo7.tsx"/>
+
+### Multiple keys
+
+<code src="./demo/demo3.tsx" />
+
+### Get the trigger key
+
+<code src="./demo/demo8.tsx" />
+
+### Custom method
+
+<code src="./demo/demo4.tsx" />
+
+### Custom DOM
+
+<code src="./demo/demo5.tsx" />
+
+## API
+
+```typescript
+type KeyType = number | string;
+type KeyFilter = KeyType | KeyType[] | ((event: KeyboardEvent) => boolean);
+
+useKeyPress(
+  keyFilter: KeyFilter,
+  eventHandler: (event: KeyboardEvent, key: KeyType) => void,
+  options?: Options
+);
+```
+
+### Params
+
+| Property     | Description                                                      | Type                                                            | Default |
+| ------------ | ---------------------------------------------------------------- | --------------------------------------------------------------- | ------- |
+| keyFilter    | Support keyCode、alias、combination keys、array、custom function | `KeyType` \| `KeyType[]` \| `(event: KeyboardEvent) => boolean` | -       |
+| eventHandler | Callback function                                                | `(event: KeyboardEvent, key: KeyType) => void`                  | -       |
+| options      | Advanced options                                                 | `Options`                                                       | -       |
+
+### Options
+
+| Property   | Description                                                                                                                                    | Type                                                        | Default       |
+| ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------- | ------------- |
+| events     | Trigger Events                                                                                                                                 | `('keydown' \| 'keyup')[]`                                  | `['keydown']` |
+| target     | DOM element or ref                                                                                                                             | `() => Element` \| `Element` \| `MutableRefObject<Element>` | -             |
+| exactMatch | Exact match. If set `true`, the event will only be trigger when the keys match exactly. For example, pressing [shift + c] will not trigger [c] | `boolean`                                                   | `false`       |
+| useCapture | to block events bubbling                                                                                                                       | `boolean`                                                   | `false`       |
+
+## Remarks
+
+1. All key alias refer to [code](https://github.com/alibaba/hooks/blob/master/packages/hooks/src/useKeyPress/index.ts#L21)
+
+2. Modifier keys
+
+```text
+ctrl
+alt
+shift
+meta
+```
+</file>
+
+<file path="packages/hooks/src/useLatest/index.en-US.md">
+---
+nav:
+  path: /hooks
+---
+
+# useLatest
+
+A Hook that returns the latest value, effectively avoiding the closure problem.
+
+## Examples
+
+### Basic usage
+
+<code src="./demo/demo1.tsx" />
+
+## API
+
+```typescript
+const latestValueRef = useLatest<T>(value: T): MutableRefObject<T>;
+```
+</file>
+
+<file path="packages/hooks/src/useLocalStorageState/index.en-US.md">
+---
+nav:
+  path: /hooks
+---
+
+# useLocalStorageState
+
+A Hook that store state into localStorage.
+
+## Examples
+
+### Store state into localStorage
+
+<code src="./demo/demo1.tsx" />
+
+### Store complex types of data
+
+<code src="./demo/demo2.tsx" />
+
+### Custom serialization and deserialization functions
+
+<code src="./demo/demo3.tsx" />
+
+### Sync state with localStorage
+
+<code src="./demo/demo4.tsx" />
+
+## API
+
+If you want to delete this record from localStorage, you can use `setState()` or `setState(undefined)`.
+
+```typescript
+type SetState<S> = S | ((prevState?: S) => S);
+
+interface Options<T> {
+  defaultValue?: T | (() => T);
+  listenStorageChange?: boolean;
+  serializer?: (value: T) => string;
+  deserializer?: (value: string) => T;
+  onError?: (error: unknown) => void;
+}
+
+const [state, setState] = useLocalStorageState<T>(
+  key: string,
+  options: Options<T>
+): [T?, (value?: SetState<T>) => void];
+```
+
+### Result
+
+| Property | Description                 | Type                            |
+| -------- | --------------------------- | ------------------------------- |
+| state    | Local `localStorage` value  | `T`                             |
+| setState | Update `localStorage` value | `(value?: SetState<T>) => void` |
+
+### Options
+
+| Property            | Description                                                                                                                                                                                             | Type                       | Default                       |
+| ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------- | ----------------------------- |
+| defaultValue        | Default value                                                                                                                                                                                           | `any \| (() => any)`       | -                             |
+| listenStorageChange | Whether to listen storage changes. If `true`, when the stored value changes, all `useLocalStorageState` with the same `key` will synchronize their states, including different tabs of the same browser | `boolean`                  | `false`                       |
+| serializer          | Custom serialization method                                                                                                                                                                             | `(value: any) => string`   | `JSON.stringify`              |
+| deserializer        | Custom deserialization method                                                                                                                                                                           | `(value: string) => any`   | `JSON.parse`                  |
+| onError             | On error callback                                                                                                                                                                                       | `(error: unknown) => void` | `(e) => { console.error(e) }` |
+
+## Remark
+
+useLocalStorageState will call `serializer` before write data to localStorage, and call `deserializer` once after read data.
+</file>
+
+<file path="packages/hooks/src/useLockFn/index.en-US.md">
+---
+nav:
+  path: /hooks
+---
+
+# useLockFn
+
+Add lock to an async function to prevent parallel executions.
+
+## Examples
+
+### Basic usage
+
+<code src="./demo/demo1.tsx" />
+
+## API
+
+```typescript
+function useLockFn<P extends any[] = any[], V = any>(
+  fn: (...args: P) => Promise<V>
+): fn: (...args: P) => Promise<V | undefined>;
+```
+
+### Result
+
+| Property | Description                  | Type                               |
+| -------- | ---------------------------- | ---------------------------------- |
+| fn       | The async function with lock | `(...args: any[]) => Promise<any>` |
+
+### Params
+
+| Property | Description       | Type                               | Default |
+| -------- | ----------------- | ---------------------------------- | ------- |
+| fn       | An async function | `(...args: any[]) => Promise<any>` | -       |
+</file>
+
+<file path="packages/hooks/src/useLongPress/index.en-US.md">
+---
+nav:
+  path: /hooks
+---
+
+# useLongPress
+
+Listen for the long press event of the target element.
+
+## Examples
+
+### Basic usage
+
+<code src="./demo/demo1.tsx"/>
+
+### Listen for click and long press events at the same time
+
+<code src="./demo/demo2.tsx"/>
+
+### Move threshold
+
+<code src="./demo/demo3.tsx"/>
+
+## API
+
+```typescript
+useLongPress(
+  onLongPress: (event: MouseEvent | TouchEvent) => void,
+  target: Target,
+  options: {
+    delay?: number;
+    moveThreshold?: { x?: number; y?: number };
+    onClick?: (event: MouseEvent | TouchEvent) => void;
+    onLongPressEnd?: (event: MouseEvent | TouchEvent) => void;
+  }
+);
+```
+
+### Params
+
+| Property    | Description                  | Type                                                        | Default |
+| ----------- | ---------------------------- | ----------------------------------------------------------- | ------- |
+| onLongPress | Trigger function             | `(event: MouseEvent \| TouchEvent) => void`                 | -       |
+| target      | DOM node or Ref              | `Element` \| `() => Element` \| `MutableRefObject<Element>` | -       |
+| options     | Optional configuration items | `Options`                                                   | `{}`    |
+
+### Options
+
+| Property       | Description                                                                         | Type                                        | Default |
+| -------------- | ----------------------------------------------------------------------------------- | ------------------------------------------- | ------- |
+| delay          | Long press time                                                                     | `number`                                    | `300`   |
+| moveThreshold  | Move threshold after press. If exceeded, the long press function won't be triggered | `{ x?: number; y?: number }`                | -       |
+| onClick        | Click event                                                                         | `(event: MouseEvent \| TouchEvent) => void` | -       |
+| onLongPressEnd | Long press end event                                                                | `(event: MouseEvent \| TouchEvent) => void` | -       |
+
+### Remark
+
+Please refer to: https://stackoverflow.com/a/11237968 to disable the ability to long press to select text on the phone
+</file>
+
+<file path="packages/hooks/src/useMap/index.en-US.md">
+---
+nav:
+  path: /hooks
+---
+
+# useMap
+
+A hook that can manage the state of Map.
+
+## Examples
+
+### Default usage
+
+<code src="./demo/demo1.tsx" />
+
+## API
+
+```typescript
+const [
+  map,
+  {
+    set,
+    setAll,
+    remove,
+    reset,
+    get
+  }
+] = useMap<K, V>(initialValue);
+```
+
+### Result
+
+| Property | Description      | Type                                 |
+| -------- | ---------------- | ------------------------------------ |
+| map      | Map object       | `Map<K, V>`                          |
+| set      | Add item         | `(key: K, value: V) => void`         |
+| get      | Get item         | `(key: K) => V \| undefined`         |
+| setAll   | Set a new Map    | `(newMap: Iterable<[K, V]>) => void` |
+| remove   | Remove key       | `(key: K) => void`                   |
+| reset    | Reset to default | `() => void`                         |
+
+### Params
+
+| Property     | Description                 | Type               | Default |
+| ------------ | --------------------------- | ------------------ | ------- |
+| initialValue | Optional, set default value | `Iterable<[K, V]>` | -       |
+</file>
+
+<file path="packages/hooks/src/useMemoizedFn/index.en-US.md">
+---
+nav:
+  path: /hooks
+---
+
+# useMemoizedFn
+
+Hooks for persistent functions. In general, useMemoizedFn can be used instead of useCallback. See [FAQ](#faq) for special cases.
+
+In some scenarios, we need to use useCallback to cache a function, but when the second parameter deps changes, the function will be regenerated, causing the function reference to change.
+
+```js
+const [state, setState] = useState('');
+
+// When the state changes, the func reference will change
+const func = useCallback(() => {
+  console.log(state);
+}, [state]);
+```
+
+Using useMemoizedFn, you can omit the second parameter deps, and ensure that the function reference never change.
+
+```js
+const [state, setState] = useState('');
+
+// func reference never change
+const func = useMemoizedFn(() => {
+  console.log(state);
+});
+```
+
+## Examples
+
+### Default usage
+
+<code src="./demo/demo1.tsx" />
+
+### Performance Improvement
+
+<code src="./demo/demo2.tsx" />
+
+## API
+
+```typescript
+const memoizedFn = useMemoizedFn<T>(fn: T): T;
+```
+
+### Result
+
+| Property   | Description                                       | Type                      |
+| ---------- | ------------------------------------------------- | ------------------------- |
+| memoizedFn | Function that the reference address never changes | `(...args: any[]) => any` |
+
+### Params
+
+| Property | Description                       | Type                      | Default |
+| -------- | --------------------------------- | ------------------------- | ------- |
+| fn       | Function that require persistence | `(...args: any[]) => any` | -       |
+
+## FAQ
+
+### The function returned by `useMemoizedFn` will not inherit properties from fn itself?
+
+The function returned by `useMemoizedFn` is entirely different from the reference of the passed `fn`, and it does not inherit any properties from `fn` itself. If you want to preserve the properties of the function itself after memoization, `useMemoizedFn` currently does not fulfill that requirement. In this case, consider downgrading to using `useCallback` or `useMemo` instead.
+
+Related issues: [2273](https://github.com/alibaba/hooks/issues/2273)
+</file>
+
+<file path="packages/hooks/src/useMount/index.en-US.md">
+---
+nav:
+  path: /hooks
+---
+
+# useMount
+
+A hook that executes a function after the component is mounted.
+
+## Examples
+
+### Default Usage
+
+<code src="./demo/demo1.tsx" />
+
+## API
+
+```typescript
+useMount(fn: EffectCallback);
+```
+
+### Params
+
+| Property | Description                 | Type         | Default |
+| -------- | --------------------------- | ------------ | ------- |
+| fn       | The function to be executed | `EffectCallback` | -       |
+</file>
+
+<file path="packages/hooks/src/useMouse/index.en-US.md">
+---
+nav:
+  path: /hooks
+---
+
+# useMouse
+
+Track cursor position
+
+## Examples
+
+### Default Usage
+
+<code src="./demo/demo1.tsx" />
+
+### Mouse position relative to the element
+
+<code src="./demo/demo2.tsx" />
+
+## API
+
+```typescript
+const state: {
+  screenX: number,
+  screenY: number,
+  clientX: number,
+  clientY: number,
+  pageX: number,
+  pageY: number,
+  elementX: number,
+  elementY: number,
+  elementH: number,
+  elementW: number,
+  elementPosX: number,
+  elementPosY: number,
+} = useMouse(target?: Target);
+```
+
+### Params
+
+| Property | Description        | Type                                                        | Default |
+| -------- | ------------------ | ----------------------------------------------------------- | ------- |
+| target   | DOM element or ref | `() => Element` \| `Element` \| `MutableRefObject<Element>` | -       |
+
+### result
+
+| Property    | Description                                                                                                        | Type     |
+| ----------- | ------------------------------------------------------------------------------------------------------------------ | -------- |
+| screenX     | Position left relative to the top left of the physical screen/monitor                                              | `number` |
+| screenY     | Position top relative to the top left of the physical screen/monitor                                               | `number` |
+| clientX     | Position left relative to the upper left edge of the content area                                                  | `number` |
+| clientY     | Position top relative to the upper left edge of the content area                                                   | `number` |
+| pageX       | Position left relative to the top left of the fully rendered content area in the browser                           | `number` |
+| pageY       | Position top relative to the top left of the fully rendered content area in the browser                            | `number` |
+| elementX    | Position left relative to the upper left edge of the target element                                                | `number` |
+| elementY    | Position top relative to the upper left edge of the target element                                                 | `number` |
+| elementH    | Target element height                                                                                              | `number` |
+| elementW    | Target element width                                                                                               | `number` |
+| elementPosX | The position of the target element left relative to the top left of the fully rendered content area in the browser | `number` |
+| elementPosY | The position of the target element top relative to the top left of the fully rendered content area in the browser  | `number` |
+</file>
+
+<file path="packages/hooks/src/useMutationObserver/index.en-US.md">
+---
+nav:
+  path: /hooks
+---
+
+# useMutationObserver
+
+A hook that provides the ability to watch for changes being made to the DOM tree, refer to [MutationObserver](https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver)
+
+## Examples
+
+### Default Usage
+
+<code src="./demo/demo1.tsx" />
+
+## API
+
+```typescript
+useMutationObserver(
+  callback: MutationCallback,
+  target: Target,
+  options?: MutationObserverInit,
+);
+```
+
+## Params
+
+| Property | Description           | Type                                                                | Default |
+| -------- | --------------------- | ------------------------------------------------------------------- | ------- |
+| target   | DOM element or ref    | `() => Element` \| `Element` \| `MutableRefObject<Element>`         | -       |
+| callback | The callback function | `(mutations: MutationRecord[], observer: MutationObserver) => void` | -       |
+| options  | Setting               | `MutationObserverInit`                                              | -       |
+
+### Options
+
+For options, please refer to [MutationObserver](https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver/observe#parameters)
+</file>
+
+<file path="packages/hooks/src/useNetwork/index.en-US.md">
+---
+nav:
+  path: /hooks
+---
+
+# useNetwork
+
+A hook that tracks the state of network connection.
+
+## Examples
+
+### Default usage
+
+<code src="./demo/demo1.tsx" />
+
+## API
+
+```typescript
+interface NetworkState {
+  online?: boolean;
+  since?: Date;
+  rtt?: number;
+  type?: string;
+  downlink?: number;
+  saveData?: boolean;
+  downlinkMax?: number;
+  effectiveType?: string;
+}
+
+const result: NetworkState = useNetwork();
+```
+
+### Result
+
+| Property      | Description                                                    | Type                                                                                           |
+| ------------- | -------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
+| online        | Whether connected to network                                   | `boolean`                                                                                      |
+| since         | `online` latest update time                                    | `Date`                                                                                         |
+| rtt           | The effective round-trip time estimate in milliseconds         | `number`                                                                                       |
+| type          | The connection type that the user agent is using               | `bluetooth` \| `cellular` \| `ethernet` \| `none` \| `wifi` \| `wimax` \| `other` \| `unknown` |
+| downlink      | The effective bandwidth estimate in megabits per second,       | `number`                                                                                       |
+| downlinkMax   | An upper bound on the downlink speed of the first network hop  | `number`                                                                                       |
+| saveData      | Whether the user agent has set the option to reduce data usage | `boolean`                                                                                      |
+| effectiveType | The effective connection type                                  | `slow-2g` \| `2g` \| `3g` \| `4g`                                                              |
+
+More information refer to [MDN NetworkInformation](https://developer.mozilla.org/en-US/docs/Web/API/NetworkInformation)
+</file>
+
+<file path="packages/hooks/src/usePagination/index.en-US.md">
+---
+nav:
+  path: /hooks
+---
+
+# usePagination
+
+`usePagination` is implemented based on `useRequest` and encapsulates common paging logic. The differences from `useRequest` are as follows:
+
+1. The first parameter of `service` is `{ current: number, pageSize: number }`
+2. The data structure returned by `service` is `{ total: number, list: Item[] }`
+3. It will additionally return the `pagination` field, which contains all the pagination information and functions to operate the pagination.
+4. When `refreshDeps` changes, it will reset `current` to the first page and re-initiate the request. Generally, you can put the conditions that `pagination` depends on here
+
+## Examples
+
+### Basic usage
+
+The default usage is the same as `useRequest`, but an additional `pagination` parameter will be returned, which contains all pagination information and functions to operate pagination.
+
+<code src="./demo/demo1.tsx" />
+
+### More parameters
+
+The following code demonstrates that the gender parameter is added. When the gender is modified, the paging is reset to the first page and the data is requested again.
+
+<code src="./demo/demo2.tsx" />
+
+### refreshDeps
+
+`refreshDeps` is a syntactic sugar. When it changes, it will reset the page to the first page and request data again. Generally, you can put the dependent conditions here. The following example implements the previous function more conveniently through `refreshDeps`.
+
+<code src="./demo/demo3.tsx" />
+
+### Cache
+
+Through the `params` caching capability of `useRequest`, we can cache paging data and other conditions.
+
+<code src="./demo/demo4.tsx" />
+
+## API
+
+All parameters and returned results of `useRequest` are applicable to `usePagination`, so we won't repeat them here.
+
+```typescript
+
+type Data<T> = { total: number; list: T[] };
+type Params = [{ current: number; pageSize: number, [key: string]: any }, ...any[]];
+
+const {
+  ...,
+  pagination: {
+    current: number;
+    pageSize: number;
+    total: number;
+    totalPage: number;
+    onChange: (current: number, pageSize: number) => void;
+    changeCurrent: (current: number) => void;
+    changePageSize: (pageSize: number) => void;
+  }
+} = usePagination<TData extends Data, TParams extends Params>(
+  service: (...args: TParams) => Promise<TData>,
+  {
+    ...,
+    defaultPageSize?: number;
+    refreshDeps?: any[];
+  }
+);
+```
+
+### Result
+
+| Property   | Description                                 | Type |
+| ---------- | ------------------------------------------- | ---- |
+| pagination | Paging data and methods of paging operation | `-`  |
+
+### Params
+
+| Property        | Description                                                                                                                                      | Type                   | Default |
+| --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------- | ------- |
+| defaultPageSize | Default page size                                                                                                                                | `number`               | 10       |
+| defaultCurrent  | Number of pages on initial request                                                                                                               | `number`               | 1       |
+| refreshDeps     | Changes in `refreshDeps` will reset current to the first page and re-initiate the request. Generally, you can put the dependent conditions here. | `React.DependencyList` | `[]`    |
+</file>
+
+<file path="packages/hooks/src/usePrevious/index.en-US.md">
+---
+nav:
+  path: /hooks
+---
+
+# usePrevious
+
+A Hook to return the previous state.
+
+## Examples
+
+### Default usage
+
+<code src="./demo/demo1.tsx" />
+
+### Custom shouldUpdate function
+
+<code src="./demo/demo2.tsx" />
+
+## API
+
+```typescript
+const previousState: T = usePrevious<T>(
+  state: T,
+  shouldUpdate?: (prev: T | undefined, next: T) => boolean
+);
+```
+
+### Result
+
+| Property      | Description        | Type |
+| ------------- | ------------------ | ---- |
+| previousState | The previous value | `T`  |
+
+### Params
+
+| Property     | Description                                                   | Type                                         | Default                      |
+| ------------ | ------------------------------------------------------------- | -------------------------------------------- | ---------------------------- |
+| state        | The state that needs to be tracked                            | `T`                                          | -                            |
+| shouldUpdate | Optional. Customize whether the state value should be updated | `(prev: T \| undefined, next: T) => boolean` | `(a, b) => !Object.is(a, b)` |
+</file>
+
+<file path="packages/hooks/src/useRafInterval/index.en-US.md">
+---
+nav:
+  path: /hooks
+---
+
+# useRafInterval
+
+A hook implements with `requestAnimationFrame` for better performance. The API is consistent with `useInterval`, the advantage is that the execution of the timer can be stopped when the page is not rendering, such as page hiding or minimization.
+
+Please note that the following two cases are likely to be inapplicable, and `useInterval` is preferred:
+
+- the time interval is less than `16ms`
+- want to execute the timer when page is not rendering;
+
+> `requestAnimationFrame` will automatically downgrade to `setInterval` in node environment
+
+## Examples
+
+### Default usage
+
+<code src="./demo/demo1.tsx" />
+
+### Advanced usage
+
+<code src="./demo/demo2.tsx" />
+
+## API
+
+```typescript
+useRafInterval(
+  fn: () => void,
+  delay?: number | undefined,
+  options?: Options
+): fn: () => void;
+```
+
+### Params
+
+| Property | Description                                                                                                                                                   | Type                    |
+| -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
+| fn       | The function to be executed every `delay` milliseconds.                                                                                                       | `() => void`            |
+| delay    | The time in milliseconds, the timer should delay in between executions of the specified function. The timer will be cancelled if delay is set to `undefined`. | `number` \| `undefined` |
+| options  | Config of the interval behavior.                                                                                                                              | `Options`               |
+
+### Options
+
+| Property  | Description                                                            | Type      | Default |
+| --------- | ---------------------------------------------------------------------- | --------- | ------- |
+| immediate | Whether the function should be executed immediately on first execution | `boolean` | `false` |
+
+### Result
+
+| Property      | Description    | Type         |
+| ------------- | -------------- | ------------ |
+| clearInterval | clear interval | `() => void` |
+</file>
+
+<file path="packages/hooks/src/useRafState/index.en-US.md">
+---
+nav:
+  path: /hooks
+---
+
+# useRafState
+
+Update the state in [requestAnimationFrame](https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame) callback, generally used for performance optimization.
+
+## Examples
+
+### Default usage
+
+<code src="./demo/demo1.tsx" />
+
+### API
+
+Same as `React.useState`.
+</file>
+
+<file path="packages/hooks/src/useRafTimeout/index.en-US.md">
+---
+nav:
+  path: /hooks
+---
+
+# useRafTimeout
+
+A hook implements with `requestAnimationFrame` for better performance. The API is consistent with `useTimeout`. the advantage is that will not trigger function when the page is not rendering, such as page hiding or minimization.
+
+> `requestAnimationFrame` will automatically downgrade to `setTimeout` in node environment
+
+## Examples
+
+### Default usage
+
+<code src="./demo/demo1.tsx" />
+
+### Advanced usage
+
+<code src="./demo/demo2.tsx" />
+
+## API
+
+```typescript
+useRafTimeout(
+  fn: () => void,
+  delay?: number | undefined,
+): fn: () => void;
+```
+
+### Params
+
+| Property | Description                                                                                                            | Type                    |
+| -------- | ---------------------------------------------------------------------------------------------------------------------- | ----------------------- |
+| fn       | The function to be executed after `delay` milliseconds.                                                                | `() => void`            |
+| delay    | The number of milliseconds to wait before executing the function. The timer will be cancelled if delay is `undefined`. | `number` \| `undefined` |
+
+### Result
+
+| Property     | Description   | Type         |
+| ------------ | ------------- | ------------ |
+| clearTimeout | clear timeout | `() => void` |
+</file>
+
+<file path="packages/hooks/src/useReactive/index.en-US.md">
+---
+nav:
+  path: /hooks
+---
+
+## useReactive
+
+It offers data reactivity when manipulating states and views, in which case `useState` is unnecessary for state definition. Modifying properties will automatically lead to view rerendering.
+
+## Examples
+
+### Default Usage
+
+<code src="./demo/demo1.tsx" />
+
+### Array
+
+<code src="./demo/demo2.tsx" />
+
+### Computed Properties
+
+<code src="./demo/demo3.tsx" />
+
+### Notice
+
+<code  src="./demo/demo4.tsx" />
+
+## API
+
+```js
+const state = useReactive(initialValue: Record<string, any>);
+```
+
+## Params
+
+| Params       | Description   | Type                  | Default |
+| ------------ | ------------- | --------------------- | ------- |
+| initialState | Current state | `Record<string, any>` | -       |
+
+## FAQ
+
+### When `useReactive` is used with `Map`, `Set`, it will throw an error or not work?
+
+`useReactive` is not compatible with `Map`, `Set`。
+
+Related issues: [#2239](https://github.com/alibaba/hooks/discussions/2239)
+</file>
+
+<file path="packages/hooks/src/useRequest/doc/basic/basic.en-US.md">
+---
+nav:
+  path: /hooks
+group:
+  path: /use-request
+---
+
+# Basic usage
+
+In this section, we will introduce the core and basic functionalities of `useRequest`, that is, the functionalities of the `useRequest` kernel.
+
+## Default request
+
+By default, the first parameter of `useRequest` is an asynchronous function, which is automatically executed when the component is initialized. At the same time, it automatically manages the status of `loading`, `data`, `error` of the asynchronous function.
+
+```js
+const { data, error, loading } = useRequest(service);
+```
+
+<br />
+
+<code src="./demo/default.tsx" />
+
+## Manually trigger
+
+If `options.manual = true` is set, `useRequest` will not be executed by default, and the execution needs to be triggered by `run` or `runAsync`.
+
+```tsx | pure
+const { loading, run, runAsync } = useRequest(service, {
+  manual: true
+});
+
+<button onClick={run} disabled={loading}>
+  {loading ? 'Loading' : 'Edit'}
+</button>
+```
+
+The difference between `run` and `runAsync` is:
+
+- `run` is a normal synchronous function, we will automatically catch the exception, you can use `options.onError` to handle the behavior of the exception.
+- `runAsync` is a asynchronous function that returns a `Promise`. If you use `runAsync` to call it, it means you need to catch the exception yourself.
+
+  ```ts
+  runAsync().then((data) => {
+    console.log(data);
+  }).catch((error) => {
+    console.log(error);
+  })
+  ```
+
+Next, we will demonstrate the difference between `run` and `runAsync` through the simple scenario of editing the username.
+
+<code src="./demo/manual-run.tsx" />
+
+<code src="./demo/manual-runAsync.tsx" />
+
+## The life cycle
+
+`useRequest` provides the following life cycle for you to do some processing in different stages of asynchronous functions.
+
+- `onBefore`: Triggered before the request
+- `onSuccess`: Triggered when the request is resolved
+- `onError`: Triggered when the request is rejected
+- `onFinally`: Triggered when the request is completed
+
+<code src="./demo/lifeCycle.tsx" />
+
+## Refresh (repeat the last request)
+
+`useRequest` provides the `refresh` and `refreshAsync` methods so that we can use the last parameters to re-run the request.
+
+If in the scenario of reading user information
+
+1. We read the user information with ID 1 `run(1)`
+2. We updated user information by some ways
+3. We want to re-initiate the last request, then we can use `refresh` instead of `run(1)`, which is very useful in scenarios with complex parameters
+
+<code src="./demo/refresh.tsx" />
+
+Of course, the difference between `refresh` and `refreshAsync` is the same as `run` and `runAsync`.
+
+## Change data immediately
+
+`useRequest` provides `mutate`, which can immediate modify the `data`.
+
+The usage of `mutate` is consistent with `React.setState`, supports: `mutate(newData)` and `mutate((oldData) => newData)`.
+
+In the following example, we demonstrate a scenario of `mutate`.
+
+We have modified the user name, but we do not want to wait for the request to be successful before giving feedback to the user. Instead, modify the data directly, then call the modify request in background, and provide additional feedback after the request returns.
+
+<code src="./demo/mutate.tsx" />
+
+<!-- ## Format data
+
+`useRequest` provides the `formatResult` configuration item, which can format the data returned by the service once. If `formatResult` is configured, the return value of other places where `data` is used shall prevail, such as the parameters of `result.data`, `options.onSuccess` and so on. -->
+
+<!-- <code src="./demo/formatResult.tsx" /> -->
+
+## Cancel response
+
+`useRequest` provides a `cancel` function, which will **ignore** the data and error returned by the current promise
+
+**Note: Calling `cancel` doesn't cancel the execution of promise**
+
+At the same time, `useRequest` will automatically ignore the response at the following timing:
+
+- When the component is unmounting, the ongoing promise
+- Race cancellation, when the previous promise has not returned, if the next promise is initiated, the previous promise will be ignored
+
+<code src="./demo/cancel.tsx" />
+
+## Parameter management
+
+The `params` returned by `useRequest` will record the parameters of `service`. For example, if you trigger `run(1, 2, 3)`, then `params` is equal to `[1, 2, 3]`.
+
+If we set `options.manual = false`, the parameters of calling `service` for the first time can be set by `options.defaultParams`.
+
+<code src="./demo/params.tsx" />
+
+## API
+
+```ts
+const {
+  loading: boolean,
+  data?: TData,
+  error?: Error,
+  params: TParams || [],
+  run: (...params: TParams) => void,
+  runAsync: (...params: TParams) => Promise<TData>,
+  refresh: () => void,
+  refreshAsync: () => Promise<TData>,
+  mutate: (data?: TData | ((oldData?: TData) => (TData | undefined))) => void,
+  cancel: () => void,
+} = useRequest<TData, TParams>(
+  service: (...args: TParams) => Promise<TData>,
+  {
+    manual?: boolean,
+    defaultParams?: TParams,
+    onBefore?: (params: TParams) => void,
+    onSuccess?: (data: TData, params: TParams) => void,
+    onError?: (e: Error, params: TParams) => void,
+    onFinally?: (params: TParams, data?: TData, e?: Error) => void,
+  }
+);
+```
+
+### Result
+
+| Property     | Description                                                                                                                                                                             | Type                                                                  |
+| ------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------- |
+| data         | Data returned by service                                                                                                                                                                | `TData` \| `undefined`                                                |
+| error        | Exception thrown by service                                                                                                                                                             | `Error` \| `undefined`                                                |
+| loading      | Is the service being executed                                                                                                                                                           | `boolean`                                                             |
+| params       | An array of parameters for the service being executed. For example, you triggered `run(1, 2, 3)`, then params is equal to `[1, 2, 3]`                                                   | `TParams` \| `[]`                                                     |
+| run          | <ul><li> Manually trigger the execution of the service, and the parameters will be passed to the service</li><li>Automatic handling of exceptions, feedback through `onError`</li></ul> | `(...params : TParams) => void`                                       |
+| runAsync     | The usage is the same as `run`, but it returns a Promise, so you need to handle the exception yourself.                                                                                 | `(...params: TParams) => Promise<TData>`                              |
+| refresh      | Use the last params, call `run` again                                                                                                                                                   | `() => void`                                                          |
+| refreshAsync | Use the last params, call `runAsync` again                                                                                                                                              | `() => Promise<TData>`                                                |
+| mutate       | Mutate `data` directly                                                                                                                                                                  | `(data?: TData / ((oldData?: TData) => (TData / undefined))) => void` |
+| cancel       | Ignore the current promise response                                                                                                                                                     | `() => void`                                                          |
+
+### Options
+
+| Property      | Description                                                                                                                                                                                                      | Type                                                 | Default |
+| ------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------- | ------- |
+| manual        | <ul><li> The default is `false`. That is, the service is automatically executed during initialization. </li><li>If set to `true`, you need to manually call `run` or `runAsync` to trigger execution. </li></ul> | `boolean`                                            | `false` |
+| defaultParams | The parameters passed to the service at the first default execution                                                                                                                                              | `TParams`                                            | -       |
+| onBefore      | Triggered before service execution                                                                                                                                                                               | `(params: TParams) => void`                          | -       |
+| onSuccess     | Triggered when service resolve                                                                                                                                                                                   | `(data: TData, params: TParams) => void`             | -       |
+| onError       | Triggered when service reject                                                                                                                                                                                    | `(e: Error, params: TParams) => void`                | -       |
+| onFinally     | Triggered when service execution is complete                                                                                                                                                                     | `(params: TParams, data?: TData, e?: Error) => void` | -       |
+
+Above we have introduced the most basic functionalities of useRequest, and then we will introduce some more advanced functionalities.
+</file>
+
+<file path="packages/hooks/src/useRequest/doc/cache/cache.en-US.md">
+---
+nav:
+  path: /hooks
+group:
+  path: /use-request
+---
+
+# Cache & SWR
+
+If `options.cacheKey` is set, `useRequest` will cache the successful data . The next time the component is initialized, if there is cached data, we will return the cached data first, and then send a new request in background, which is the ability of SWR.
+
+You can set the data retention time through `options.staleTime`. During this time, we consider the data to be fresh and will not re-initiate the request.
+
+You can also set the data cache time through `options.cacheTime`, after this time, we will clear the cached data.
+
+Next, through a few examples to experience these features.
+
+### SWR
+
+In the following example, we set the `cacheKey`. When the component is loaded for the second time, the cached content will be returned first, and then the request will be re-run in background. You can experience the effect by clicking the button.
+
+<code src="./demo/cacheKey.tsx" />
+
+### Keep your data fresh
+
+By setting `staleTime`, we can specify the data retention time, during which time the request will not be re-run. The following example sets a fresh time of 5s, you can experience the effect by clicking the button
+
+<code src="./demo/staleTime.tsx" />
+
+### Data sharing
+
+> Note: If no new request is issued, the "Data sharing" will not be triggered. `cacheTime` and `staleTime` parameters will invalidate "Data sharing". [#2313](https://github.com/alibaba/hooks/issues/2313)
+
+The content of the same `cacheKey` is shared globally, which will bring the following features:
+
+- Sharing request `Promise`: Only one of the same `cacheKey` will initiate a request at the same time, and the subsequent ones will share the same request `Promise`.
+- Data synchronization: When a request is made by one `cacheKey`, the contents of other identical `cacheKey` will be synchronized accordingly.
+
+In the following example, the two components will only initiate one request during initialization. And the content of the two articles is always synchronized.
+
+<code src="./demo/share.tsx" />
+
+### Parameters cache
+
+The cached data includes `data` and `params`. Through the `params` caching mechanism, we can remember the conditions of the last request and initialize it next time.
+
+In the following example, we can initialize the `keyword` from the cached `params`
+
+<code src="./demo/params.tsx" />
+
+### Clear cache
+
+ahooks provides a `clearCache` method, which can clear the cache data of the specified `cacheKey`.
+
+<code src="./demo/clearCache.tsx" />
+
+### Custom cache
+
+By setting `setCache` and `getCache`, you can customize the cache, for example, you can store data in `localStorage`, `IndexDB`, etc.
+
+Please note:
+
+1. `setCache` and `getCache` need to be used together.
+2. In the custom cache mode, `cacheTime` and `clearCache` will be unused, please implement it yourself according to the actual situation.
+
+<code src="./demo/setCache.tsx" />
+
+## API
+
+```ts
+interface CachedData<TData, TParams> {
+  data: TData;
+  params: TParams;
+  time: number;
+}
+```
+
+### Options
+
+| Property  | Description                                                                                                                                                                                                                                   | Type                              | Default  |
+| --------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------- | -------- |
+| cacheKey  | A unique ID of the request. Data of the same `cacheKey` will synchronized globally (`cacheTime` and `staleTime` parameters will invalidate this mechanism, see demo: [Data sharing](#data-sharing))                                           | `string`                          | -        |
+| cacheTime | <ul><li> Set the cache time. By default, the cached data will be cleared after 5 minutes.</li><li> If set to `-1`, the cached data will never expire</li></ul>                                                                                | `number`                          | `300000` |
+| staleTime | <ul><li> Time to consider the cached data is fresh. Within this time interval, the request will not be re-initiated</li><li> If set to `-1`, it means that the data is always fresh</li></ul>                                                 | `number`                          | `0`      |
+| setCache  | <ul><li> Custom set cache </li><li> `setCache` and `getCache` need to be used together</li><li> In the custom cache mode, `cacheTime` and `clearCache` are useless, please implement it yourself according to the actual situation.</li></ul> | `(data: CachedData) => void;`     | -        |
+| getCache  | Custom get cache                                                                                                                                                                                                                              | `(params: TParams) => CachedData` | -        |
+
+### clearCache
+
+```tsx | pure
+import { clearCache } from 'ahooks';
+
+clearCache(cacheKey?: string | string[]);
+```
+
+1. Support clearing a single cache, or a group of caches
+2. If `cacheKey` is empty, all cached data will be cleared
+
+## Remark
+
+- Only successful request data will be cached
+- Cached data includes `data` and `params`
+</file>
+
+<file path="packages/hooks/src/useRequest/doc/debounce/debounce.en-US.md">
+---
+nav:
+  path: /hooks
+group:
+  path: /use-request
+---
+
+# Debounce
+
+Enter the debounce mode by setting `options.debounceWait`. At this time, if `run` or `runAsync` is triggered frequently, the request will be executed with the debounce strategy.
+
+```tsx | pure
+const { data, run } = useRequest(getUsername, {
+  debounceWait: 300,
+  manual: true
+});
+```
+
+As in the example code above, if `run` is triggered frequently, it will only wait for 300ms to execute after the last trigger.
+
+You can quickly enter text in the input box below to experience the effect
+
+<code src="./demo/debounce.tsx" />
+
+## API
+
+### Options
+
+The usage and effect of all debounce property are the same as [lodash.debounce](https://lodash.com/docs/4.17.15#debounce)
+
+| Property         | Description                                                                  | Type      | Default Value |
+| ---------------- | ---------------------------------------------------------------------------- | --------- | ------------- |
+| debounceWait     | Debounce delay time, in milliseconds. After setting, enter the debounce mode | `number`  | -             |
+| debounceLeading  | Execute the request before the delay starts                                  | `boolean` | `false`       |
+| debounceTrailing | Execute the request after the delay ends                                     | `boolean` | `true`        |
+| debounceMaxWait  | The maximum time request is allowed to be delayed before it’s executed       | `number`  | -             |
+
+## Remark
+
+- `options.debounceWait`, `options.debounceLeading`, `options.debounceTrailing`, `options.debounceMaxWait` support dynamic changes.
+- `runAsync` will return a `Promise` when it is actually executed. When it is not executed, there will be no return.
+- `cancel` can abort a function waiting to be executed.
+</file>
+
+<file path="packages/hooks/src/useRequest/doc/index/index.en-US.md">
+---
+nav:
+  path: /hooks
+group:
+  path: /use-request
+---
+
+# Quick Start
+
+`useRequest` is a powerful Hooks for asynchronous data management. `useRequest` is sufficient enough for network request scenarios in React projects.
+
+`useRequest` organizes code through a plug-in pattern, the core code is extremely simple, and can be easily extended for more advanced features. Current features include:
+
+- Automatic/manual request
+- Polling
+- Debounce
+- Throttle
+- Refresh on window focus
+- Error retry
+- Loading delay
+- SWR(stale-while-revalidate)
+- Caching
+
+Next, let's get to know `useRequest` from the two simplest examples.
+
+## Default usage
+
+The first parameter of `useRequest` is an asynchronous function, which will be automatically triggered when the component is first loaded. At the same time, it automatically manages the status of `loading`, `data`, `error` of the asynchronous function.
+
+```js
+const { data, error, loading } = useRequest(getUsername);
+```
+
+<br />
+
+<code src="./demo/default.tsx" />
+
+## Manual trigger
+
+If `options.manual = true` is set, useRequest will not be executed by default, and the execution needs to be triggered by `run`.
+
+```js
+const { loading, run } = useRequest(changeUsername, {
+  manual: true
+});
+```
+
+<br />
+
+<code src="./demo/manual.tsx" />
+
+In the above two examples, we demonstrated the most basic usages of `useRequest`. Next, we will introduce the features of `useRequest` one by one.
+</file>
+
+<file path="packages/hooks/src/useRequest/doc/loadingDelay/loadingDelay.en-US.md">
+---
+nav:
+   path: /hooks
+group:
+   path: /use-request
+---
+
+# Loading Delay
+
+By setting `options.loadingDelay`, you can delay the time when `loading` turns to `true`, effectively prevent UI flashing.
+
+```tsx | pure
+const { loading, data } = useRequest(getUsername, {
+   loadingDelay: 300
+});
+
+return <div>{ loading ? 'Loading...' : data }</div>
+```
+
+For example, in the above scenario, if `getUsername` returns within 300ms, `loading` will not become `true`, avoiding the page displays `Loading...`.
+
+You can quickly click the button in the example below to experience the effect
+
+<code src="./demo/loadingDelay.tsx" />
+
+## API
+
+| Property     | Description                                       | Type     | Default |
+| ------------ | ------------------------------------------------- | -------- | ------- |
+| loadingDelay | Set the delay time for `loading` to become `true` | `number` | `0`     |
+
+## Remark
+
+`options.loadingDelay` supports dynamic changes.
+</file>
+
+<file path="packages/hooks/src/useRequest/doc/polling/polling.en-US.md">
+---
+nav:
+  path: /hooks
+group:
+  path: /use-request
+---
+
+# Polling
+
+By setting `options.pollingInterval`, enter the polling mode, `useRequest` will periodically trigger service execution.
+
+```tsx | pure
+const { data, run, cancel } = useRequest(getUsername, {
+  pollingInterval: 3000,
+});
+```
+
+For example, in the above scenario, `getUsername` will be requested every 3000ms. You can stop polling by `cancel` and start polling by `run/runAsync`.
+
+You can experience the effect through the following example
+
+<code src="./demo/polling.tsx" />
+
+## Polling error retry
+
+Polling by `options. PollingErrorRetryCount` configuration error retry count.
+
+```tsx | pure
+const { data, run, cancel } = useRequest(getUsername, {
+  pollingInterval: 3000,
+  pollingErrorRetryCount: 3,
+});
+```
+
+You can experience the effect through the following example.
+
+<code src="./demo/pollingError.tsx" />
+
+## API
+
+### Return
+
+| Property | Description   | Type                                     |
+| -------- | ------------- | ---------------------------------------- |
+| run      | Start polling | `(...params: TParams) => void`           |
+| runAsync | Start polling | `(...params: TParams) => Promise<TData>` |
+| cancel   | Stop polling  | `() => void`                             |
+
+### Options
+
+| Property               | Description                                                                                                                                                                  | Type      | Default |
+| ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------- | ------- |
+| pollingInterval        | Polling interval, in milliseconds. If the value is greater than 0, the polling mode is activated.                                                                            | `number`  | `0`     |
+| pollingWhenHidden      | Whether to continue polling when the page is hidden. If set to false, polling will be temporarily paused when the page is hidden, and resume when the page is visible again. | `boolean` | `true`  |
+| pollingErrorRetryCount | Number of polling error retries. If set to -1, an infinite number of times                                                                                                   | `number`  | `-1`    |
+
+## Remark
+
+- `options.pollingInterval`, `options.pollingWhenHidden` support dynamic changes.
+- If you set `options.manual = true`, the initialization will not start polling, you need start it by `run/runAsync`.
+- If the `pollingInterval` changes from 0 to a value greater than 0, polling will not start automatically, and you need start it by `run/runAsync`.
+- The polling logic is to wait for `pollingInterval` time after each request is completed, and then initiate the next request.
+</file>
+
+<file path="packages/hooks/src/useRequest/doc/ready/ready.en-US.md">
+---
+nav:
+  path: /hooks
+group:
+  path: /use-request
+---
+
+# Ready
+
+By setting `options.ready`, you can control whether a request is sent. When its value is `false`, the request will never be sent.
+
+The specific behavior is as follows:
+
+1. In the automatic mode of `manual=false`, every time `ready` changes from `false` to `true`, a request will be automatically executed with the parameter `options.defaultParams`.
+2. When `manual=true` manual request mode, as long as `ready=false`, the request triggered by `run/runAsync` will not be executed.
+
+## Automatic mode
+
+The following example demonstrates the behavior of `ready` in automatic mode. Every time `ready` changes from `false` to `true`, the request will be executed.
+
+<code src="./demo/ready.tsx" />
+
+## Manual mode
+
+The following example demonstrates the behavior of `ready` in manual mode. Only when `ready` is equal to `true`, `run` will be executed.
+
+<code src="./demo/manualReady.tsx" />
+
+## API
+
+### Options
+
+| Property | Description                  | Type      | Default |
+| -------- | ---------------------------- | --------- | ------- |
+| ready    | Is the current request ready | `boolean` | `true`  |
+</file>
+
+<file path="packages/hooks/src/useRequest/doc/refreshDeps/refresyDeps.en-US.md">
+---
+nav:
+  path: /hooks
+group:
+  path: /use-request
+---
+
+# RefreshDeps
+
+By setting `options.refreshDeps`, `useRequest` will run [refresh](https://ahooks.js.org/hooks/use-request/basic/#result) automatically when dependencies change, achieving the effect of [Refresh (repeat the last request)](https://ahooks.js.org/hooks/use-request/basic/#refresh-repeat-the-last-request).
+
+```tsx | pure
+const [userId, setUserId] = useState('1');
+const { data, run } = useRequest(() => getUserSchool(userId), {
+  refreshDeps: [userId],
+});
+```
+
+In the example code above, `useRequest` will execution when it is initialized and `userId` changes.
+
+It is exactly the same with the following implementation
+
+```tsx | pure
+const [userId, setUserId] = useState('1');
+const { data, refresh } = useRequest(() => getUserSchool(userId));
+
+useEffect(() => {
+  refresh();
+}, [userId]);
+```
+
+### Repeat last request
+
+<code src="./demo/refreshDeps.tsx" />
+
+### Custom refresh
+
+<code src="./demo/refreshDepsAction.tsx" />
+
+## API
+
+### Options
+
+| Property          | Description                                                                                                   | Type                   | Default |
+| ----------------- | ------------------------------------------------------------------------------------------------------------- | ---------------------- | ------- |
+| refreshDeps       | When the content of the array changes, trigger refresh.                                                       | `React.DependencyList` | `[]`    |
+| refreshDepsAction | Customize the request behavior during dependency refresh; this parameter is invoked when dependencies change. | `() => void`           | -       |
+
+## Remark
+
+- If you set `options.manual = true`, both `refreshDeps` and `refreshDepsAction` are no longer effective, you need to trigger the request by `run/runAsync`.
+</file>
+
+<file path="packages/hooks/src/useRequest/doc/refreshOnWindowFocus/refreshOnWindowFocus.en-US.md">
+---
+nav:
+  path: /hooks
+group:
+  path: /use-request
+---
+
+# RefreshOnWindowFocus
+
+By setting `options.refreshOnWindowFocus`, the request will be refreshed when the browser is `refocus` and `revisible`.
+
+```tsx | pure
+const { data } = useRequest(getUsername, {
+  refreshOnWindowFocus: true,
+});
+```
+
+You can click outside the browser, and then click the current page to experience the effect (or hide the current page and redisplay). If the interval from the previous request is greater than 5000ms, it will be requested again.
+
+<code src="./demo/refreshOnWindowFocus.tsx" />
+
+## API
+
+### Options
+
+| Property             | Description                                                              | Type      | Default |
+| -------------------- | ------------------------------------------------------------------------ | --------- | ------- |
+| refreshOnWindowFocus | Whether to re-initiate the request when the screen refocus or revisible. | `boolean` | `false` |
+| focusTimespan        | Re-request interval, in milliseconds                                     | `number`  | `5000`  |
+
+## Remark
+
+- `options.refreshOnWindowFocus`, `options.focusTimespan` support dynamic changes.
+- Listen for browser events `visibilitychange` and `focus`.
+</file>
+
+<file path="packages/hooks/src/useRequest/doc/retry/retry.en-US.md">
+---
+nav:
+  path: /hooks
+group:
+  path: /use-request
+---
+
+# Error Retry
+
+By setting `options.retryCount`, set the number of error retries, useRequest will retry after it fails.
+
+```tsx | pure
+const { data, run } = useRequest(getUsername, {
+  retryCount: 3,
+});
+```
+
+As in the example code above, after the request is failed, it will retry 3 times.
+
+You can type text in the input box below and click the Edit button to experience the effect
+
+<code src="./demo/retry.tsx" />
+
+## API
+
+### Options
+
+| Property      | Description                                                                                                                                                                                                                                                                                          | Type     | Default |
+| ------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- | ------- |
+| retryCount    | The number of retries. If set to `-1`, it will try again indefinitely.                                                                                                                                                                                                                               | `number` | -       |
+| retryInterval | <ul><li>Retry interval in milliseconds. </li><li>If not set, the simple exponential backoff algorithm will be used by default, taking `1000 * 2 ** retryCount`, that is, waiting for 2s for the first retry, and 4s for the second retry. By analogy, if it is greater than 30s, take 30s </li></ul> | `number` | -       |
+
+## Remark
+
+- `options.retryCount`, `options.retryInterval` support dynamic changes.
+- `cancel` can cancel the ongoing retry behavior.
+</file>
+
+<file path="packages/hooks/src/useRequest/doc/throttle/throttle.en-US.md">
+---
+nav:
+  path: /hooks
+group:
+  path: /use-request
+---
+
+# Throttle
+
+Enter the throttle mode by setting `options.throttleWait`. At this time, if `run` or `runAsync` is triggered frequently, the request will be executed with the throttle strategy.
+
+```tsx | pure
+const { data, run } = useRequest(getUsername, {
+  throttleWait: 300,
+  manual: true
+});
+```
+
+As in the example code above, if `run` is triggered frequently, it will only be executed once every 300ms.
+
+You can quickly enter text in the input box below to experience the effect
+
+<code src="./demo/throttle.tsx" />
+
+## API
+
+### Options
+
+The usage and effects of all throttle property are the same as [lodash.throttle](https://lodash.com/docs/4.17.15#throttle)
+
+| Property         | Description                                                                 | Type      | Default Value |
+| ---------------- | --------------------------------------------------------------------------- | --------- | ------------- |
+| throttleWait     | Throttle wait time, in milliseconds. After setting, enter the throttle mode | `number`  | -             |
+| throttleLeading  | Execute the request before throttling starts                                | `boolean` | `true`        |
+| throttleTrailing | Execute the request after throttling ends                                   | `boolean` | `true`        |
+
+## Remark
+
+- `options.throttleWait`, `options.throttleLeading`, `options.throttleTrailing` support dynamic changes.
+- `runAsync` will return a `Promise` when it is actually executed. When it is not executed, there will be no return.
+- `cancel` can abort a function waiting to be executed.
+</file>
+
+<file path="packages/hooks/src/useResetState/index.en-US.md">
+---
+nav:
+  path: /hooks
+---
+
+# useResetState
+
+useResetState works similar to `React.useState`, it provides a `reset` method
+
+## Examples
+
+### Default Usage
+
+<code src="./demo/demo1.tsx" />
+
+## API
+
+```typescript
+const [state, setState, resetState] = useResetState<S>(
+  initialState: S | (() => S),
+): [S, Dispatch<SetStateAction<S>>, () => void]
+```
+</file>
+
+<file path="packages/hooks/src/useResponsive/index.en-US.md">
+---
+nav:
+  path: /hooks
+---
+
+# useResponsive
+
+React Hook for getting responsive info.
+
+## Examples
+
+### Get responsive info in components
+
+<code src="./demo/demo1.tsx" />
+
+## API
+
+```typescript
+interface ResponsiveConfig {
+  [key: string]: number;
+}
+interface ResponsiveInfo {
+  [key: string]: boolean;
+}
+function configResponsive(config: ResponsiveConfig): void;
+function useResponsive(): ResponsiveInfo;
+```
+
+### Config
+
+The default config is the same as bootstrap:
+
+```javascript
+{
+  'xs': 0,
+  'sm': 576,
+  'md': 768,
+  'lg': 992,
+  'xl': 1200,
+}
+```
+
+If you want to config your own responsive breakpoints, you can use `configResponsive`:
+
+(Caution: You only need to config it once. Don't call this config function repeatedly.)
+
+```javascript
+configResponsive({
+  small: 0,
+  middle: 800,
+  large: 1200,
+});
+```
+</file>
+
+<file path="packages/hooks/src/useSafeState/index.en-US.md">
+---
+nav:
+  path: /hooks
+---
+
+# useSafeState
+
+It is exactly the same with `React.useState` , but after the component is unmounted, the `setState` in the asynchronous callback will no longer be executed to avoid memory leakage caused by updating the state after the component is unmounted.
+
+## Examples
+
+### Basic usage
+
+<code src="./demo/demo1.tsx" />
+
+## API
+
+```typescript
+const [state, setState] = useSafeState(initialState);
+```
+</file>
+
+<file path="packages/hooks/src/useScroll/index.en-US.md">
+---
+nav:
+  path: /hooks
+---
+
+# useScroll
+
+Get the scroll position of an element.
+
+## Examples
+
+### Basic Usage
+
+<code src="./demo/demo1.tsx" />
+
+### Detect Whole Page Scroll
+
+<code src="./demo/demo2.tsx" />
+
+### Control listen on scroll status
+
+<code src="./demo/demo3.tsx" />
+
+## API
+
+```typescript
+const position = useScroll(target, shouldUpdate);
+```
+
+### Params
+
+| Property     | Description               | Type                                                                        | Default      |
+| ------------ | ------------------------- | --------------------------------------------------------------------------- | ------------ |
+| target       | DOM element or ref object | `Element` \| `Document` \| `(() => Element)` \| `MutableRefObject<Element>` | `document`   |
+| shouldUpdate | Whether update position   | `({ top: number, left: number }) => boolean`                                | `() => true` |
+
+### Result
+
+| Property | Description                                 | Type                                         |
+| -------- | ------------------------------------------- | -------------------------------------------- |
+| position | The current scroll position of the element. | `{ left: number, top: number } \| undefined` |
+</file>
+
+<file path="packages/hooks/src/useSelections/index.en-US.md">
+---
+nav:
+  path: /hooks
+---
+
+# useSelections
+
+This hook is used for Checkbox group, supports multiple selection, single selection, select-all, select-none and semi-selected etc.
+
+## Examples
+
+### Default usage
+
+<code src="./demo/demo1.tsx" />
+
+### Object array
+
+<code src="./demo/demo2.tsx" />
+
+### Pagination
+
+<code src="./demo/demo3.tsx" />
+
+## API
+
+```typescript
+interface Options<T> {
+  defaultSelected?: T[];
+  itemKey?: string | ((item: T) => Key);
+}
+
+// works when >=3.8.0, recommended ✅
+const result: Result = useSelections<T>(items: T[], options?: Options<T>);
+
+// works when <4.0.0, will be removed in ahooks 4.0 🙅🏻‍♀️
+const result: Result = useSelections<T>(items: T[], defaultSelected?: T[]);
+```
+
+### Params
+
+| Property | Description | Type | Default |
+| --- | --- | --- | --- |
+| items | Data items | `T[]` | - |
+| options | Optional configuration | `Options` | - |
+
+### Options
+
+| Property | Description | Type | Default |
+| --- | --- | --- | --- |
+| defaultSelected | Default selected data | `T[]` | `[]` |
+| itemKey | The unique key of data item. Typically, this parameter needs to be specified when the data source is an array of object | `string` \| `(item: T) => React.Key` | - |
+
+### Result
+
+| Property          | Description                                                                                                                                                                                                                                               | Type                                                                |
+| ----------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- |
+| selected          | Selected items                                                                                                                                                                                                                                            | `T[]`                                                               |
+| allSelected       | Is all items selected                                                                                                                                                                                                                                     | `boolean`                                                           |
+| noneSelected      | Is no item selected                                                                                                                                                                                                                                       | `boolean`                                                           |
+| partiallySelected | Is partially items selected                                                                                                                                                                                                                               | `boolean`                                                           |
+| isSelected        | Whether item is selected                                                                                                                                                                                                                                  | `(value: T) => boolean`                                             |
+| setSelected       | Select multiple items. When executed multiple times, the later return value overwrites the previous one, so if you want to merge the results of multiple operations, you need to do this manually: `setSelected((oldArray) => oldArray.concat(newArray))` | `(value: T[]) => void  \| (value: (prevState: T[]) => T[]) => void` |
+| select            | Select single item                                                                                                                                                                                                                                        | `(value: T) => void`                                                |
+| unSelect          | UnSelect single item                                                                                                                                                                                                                                      | `(value: T) => void`                                                |
+| toggle            | Toggle single item select status                                                                                                                                                                                                                          | `(value: T) => void`                                                |
+| selectAll         | Select all items                                                                                                                                                                                                                                          | `() => void`                                                        |
+| unSelectAll       | UnSelect all items                                                                                                                                                                                                                                        | `() => void`                                                        |
+| toggleAll         | Toggle select all items                                                                                                                                                                                                                                   | `() => void`                                                        |
+| clearAll          | Clear all selected (In general, `clearAll` is equivalent to `unSelectAll`. If the items is dynamic, `clearAll` will clear "all selected data", while `unSelectAll` will only clear "the currently selected data in the items")                            | `() => void`                                                        |
+</file>
+
+<file path="packages/hooks/src/useSessionStorageState/index.en-US.md">
+---
+nav:
+  path: /hooks
+---
+
+# useSessionStorageState
+
+A Hook for store state into sessionStorage.
+
+Usage is exactly the same as [useLocalStorageState](./use-local-storage-state).
+</file>
+
+<file path="packages/hooks/src/useSet/index.en-US.md">
+---
+nav:
+  path: /hooks
+---
+
+# useSet
+
+A hook that can manage the state of Set.
+
+## Examples
+
+### Default usage
+
+<code src="./demo/demo1.tsx" />
+
+## API
+
+```typescript
+const [
+  set,
+  {
+    add,
+    remove,
+    reset
+  }
+] = useSet<K>(initialValue);
+```
+
+### Result
+
+| Property | Description      | Type               |
+| -------- | ---------------- | ------------------ |
+| set      | Set object       | `Set<K>`           |
+| add      | Add item         | `(key: K) => void` |
+| remove   | Remove item      | `(key: K) => void` |
+| reset    | Reset to default | `() => void`       |
+
+### Params
+
+| Property     | Description                 | Type          | Default |
+| ------------ | --------------------------- | ------------- | ------- |
+| initialValue | Optional, set default value | `Iterable<K>` | -       |
+</file>
+
+<file path="packages/hooks/src/useSetState/index.en-US.md">
+---
+nav:
+  path: /hooks
+---
+
+# useSetState
+
+useSetState works similar to `this.setState` of class component, used to manage the state of object type.
+
+## Examples
+
+### Default usage
+
+<code src="./demo/demo1.tsx" />
+
+### Updating with callback
+
+<code src="./demo/demo2.tsx" />
+
+## API
+
+```typescript
+const [state, setState] = useSetState<T>(initialState);
+```
+
+### Result
+
+| Property | Description          | Type                                                                                      | Default |
+| -------- | -------------------- | ----------------------------------------------------------------------------------------- | ------- |
+| state    | Current state        | `T`                                                                                       | -       |
+| setState | Update current state | `(state: Partial<T> \| null) => void` \| `((prevState: T) => Partial<T> \| null) => void` | -       |
+
+### Params
+
+| Property     | Description   | Type           | Default |
+| ------------ | ------------- | -------------- | ------- |
+| initialState | Initial state | `T \| () => T` | -       |
+</file>
+
+<file path="packages/hooks/src/useSize/index.en-US.md">
+---
+nav:
+  path: /hooks
+---
+
+# useSize
+
+A hook that observes size change of an element.
+
+## Examples
+
+### Default usage
+
+<code src="./demo/demo1.tsx" />
+
+### Pass in the DOM element
+
+<code src="./demo/demo2.tsx" />
+
+## API
+
+```typescript
+const size = useSize(target);
+```
+
+### Params
+
+| Property | Description               | Type                                                          | Default |
+| -------- | ------------------------- | ------------------------------------------------------------- | ------- |
+| target   | DOM element or ref object | `Element` \| `(() => Element)` \| `MutableRefObject<Element>` | -       |
+
+### Result
+
+| Property | Description         | Type                                             | Default                                                                   |
+| -------- | ------------------- | ------------------------------------------------ | ------------------------------------------------------------------------- |
+| size     | Size of the element | `{ width: number, height: number } \| undefined` | `{ width: target.clientWidth, height: target.clientHeight } \| undefined` |
+</file>
+
+<file path="packages/hooks/src/useTextSelection/index.en-US.md">
+---
+nav:
+  path: /hooks
+---
+
+# useTextSelection
+
+Tracking content, size, position of user text selection.
+
+## Examples
+
+### Default usage
+
+<code src="./demo/demo1.tsx" />
+
+### Listen for specified area
+
+<code src="./demo/demo3.tsx" />
+
+### Translate user text selection
+
+<code src="./demo/demo2.tsx" />
+
+## API
+
+```typescript
+const state = useTextSelection(target?);
+```
+
+### Params
+
+| Property | Description        | Type                                                                                 | Default    |
+| -------- | ------------------ | ------------------------------------------------------------------------------------ | ---------- |
+| target   | DOM element or ref | `Element` \| `Document` \| `(() => Element\Document)` \| `MutableRefObject<Element>` | `document` |
+
+### Result
+
+| Property | Description                                    | Type    |
+| -------- | ---------------------------------------------- | ------- |
+| state    | Content, size, position of user text selection | `State` |
+
+### State
+
+| Property | Description                         | Type     |
+| -------- | ----------------------------------- | -------- |
+| text     | Selected text                       | `string` |
+| left     | The left coordinate value of text   | `number` |
+| right    | The right coordinate value of text  | `number` |
+| top      | The top coordinate value of text    | `number` |
+| bottom   | The bottom coordinate value of text | `number` |
+| height   | The height of text                  | `number` |
+| width    | The width of text                   | `number` |
+</file>
+
+<file path="packages/hooks/src/useTheme/index.en-US.md">
+---
+nav:
+  path: /hooks
+---
+
+# useTheme
+
+This hook is used to get and set the theme, and store the `themeMode` into `localStorage`.
+
+## Examples
+
+### Default usage
+
+<code src="./demo/demo1.tsx" />
+
+## API
+
+```typescript
+const { theme, themeMode, setThemeMode } = useTheme({
+  localStorageKey?: string;
+});
+```
+
+### Params
+
+| Property        | Description                                           | Type     | Default   |
+| --------------- | ----------------------------------------------------- | -------- | --------- |
+| localStorageKey | The key in localStorage to store selected theme mode | `string` | `undefined` |
+
+### Result
+
+| Property     | Description           | Type                                            | Default                                                                               |
+| ------------ | --------------------- | ----------------------------------------------- | ------------------------------------------------------------------------------------- |
+| theme        | current display theme | `"light"   \| "dark"`                           | if themeMode is "system" then equals to system setting，otherwise equals to themeMode |
+| themeMode    | selected theme mode   | `"light" \| "dark" \| "system"`                 | equals to localStorage "themeMode", otherwise equals to "system"                      |
+| setThemeMode | select theme mode     | `(mode: "light" \| "dark" \| "system") => void` |                                                                                       |
+</file>
+
+<file path="packages/hooks/src/useThrottle/index.en-US.md">
+---
+nav:
+  path: /hooks
+---
+
+# useThrottle
+
+A hook that deal with the throttled value.
+
+## Examples
+
+### Default usage
+
+<code src="./demo/demo1.tsx" />
+
+## API
+
+```typescript
+const throttledValue = useThrottle(
+  value: any,
+  options?: Options
+);
+```
+
+### Params
+
+| Property | Description                        | Type      | Default |
+| -------- | ---------------------------------- | --------- | ------- |
+| value    | The value to throttle.             | `any`     | -       |
+| options  | Config for the throttle behaviors. | `Options` | -       |
+
+### Options
+
+| Property | Description                                           | Type      | Default |
+| -------- | ----------------------------------------------------- | --------- | ------- |
+| wait     | The number of milliseconds to delay.                  | `number`  | `1000`  |
+| leading  | Specify invoking on the leading edge of the timeout.  | `boolean` | `true`  |
+| trailing | Specify invoking on the trailing edge of the timeout. | `boolean` | `true`  |
+</file>
+
+<file path="packages/hooks/src/useThrottleEffect/index.en-US.md">
+---
+nav:
+  path: /hooks
+---
+
+# useThrottleEffect
+
+Throttle your `useEffect`.
+
+## Examples
+
+### Default usage
+
+<code src="./demo/demo1.tsx" />
+
+## API
+
+```typescript
+useThrottleEffect(
+  effect: EffectCallback,
+  deps?: DependencyList,
+  options?: Options
+);
+```
+
+### Params
+
+| Property | Description                                                  | Type             | Default |
+| -------- | ------------------------------------------------------------ | ---------------- | ------- |
+| effect   | The effect callback.                                         | `EffectCallback` | -       |
+| deps     | The dependencies list.                                       | `DependencyList` | -       |
+| options  | Config the throttle behavior. See the Options section below. | `Options`        | -       |
+
+### Options
+
+| Property | Description                                           | Type      | Default |
+| -------- | ----------------------------------------------------- | --------- | ------- |
+| wait     | The number of milliseconds to wait.                   | `number`  | `1000`  |
+| leading  | Specify invoking on the leading edge of the timeout.  | `boolean` | `true`  |
+| trailing | Specify invoking on the trailing edge of the timeout. | `boolean` | `true`  |
+</file>
+
+<file path="packages/hooks/src/useThrottleFn/index.en-US.md">
+---
+nav:
+  path: /hooks
+---
+
+# useThrottleFn
+
+A hook that deal with the throttled function.
+
+## Examples
+
+### Default usage
+
+<code src="./demo/demo1.tsx" />
+
+## API
+
+```typescript
+const {
+  run,
+  cancel,
+  flush
+} = useThrottleFn(
+  fn: (...args: any[]) => any,
+  options?: Options
+);
+```
+
+### Params
+
+| Property | Description                       | Type                      | Default |
+| -------- | --------------------------------- | ------------------------- | ------- |
+| fn       | The function to throttle.         | `(...args: any[]) => any` | -       |
+| options  | Config for the throttle behaviors | `Options`                 | -       |
+
+### Options
+
+| Property | Description                                           | Type      | Default |
+| -------- | ----------------------------------------------------- | --------- | ------- |
+| wait     | The number of milliseconds to delay.                  | `number`  | `1000`  |
+| leading  | Specify invoking on the leading edge of the timeout.  | `boolean` | `true`  |
+| trailing | Specify invoking on the trailing edge of the timeout. | `boolean` | `true`  |
+
+### Result
+
+| Property | Description                                            | Type                      |
+| -------- | ------------------------------------------------------ | ------------------------- |
+| run      | Invoke and pass parameters to fn.                      | `(...args: any[]) => any` |
+| cancel   | Cancel the invocation of currently throttled function. | `() => void`              |
+| flush    | Immediately invoke currently throttled function        | `() => void`              |
+</file>
+
+<file path="packages/hooks/src/useTimeout/index.en-US.md">
+---
+nav:
+  path: /hooks
+---
+
+# useTimeout
+
+A hook that handles the `setTimeout` timer function.
+
+## Examples
+
+### Default usage
+
+<code src="./demo/demo1.tsx" />
+<code src="./demo/demo2.tsx" />
+
+## API
+
+```typescript
+useTimeout(
+  fn: () => void,
+  delay?: number | undefined
+): fn: () => void;
+```
+
+### Params
+
+| Property | Description                                                                                                            | Type                    |
+| -------- | ---------------------------------------------------------------------------------------------------------------------- | ----------------------- |
+| fn       | The function to be executed after `delay` milliseconds.                                                                | `() => void`            |
+| delay    | The number of milliseconds to wait before executing the function. The timer will be cancelled if delay is `undefined`. | `number` \| `undefined` |
+
+### Result
+
+| Property     | Description   | Type         |
+| ------------ | ------------- | ------------ |
+| clearTimeout | clear timeout | `() => void` |
+</file>
+
+<file path="packages/hooks/src/useTitle/index.en-US.md">
+---
+nav:
+  path: /hooks
+---
+
+# useTitle
+
+A hook that set title of the page.
+
+## Examples
+
+### Default usage
+
+<code src="./demo/demo1.tsx" />
+
+## API
+
+```typescript
+useTitle(title: string, options?: Options);
+```
+
+### Params
+
+| Property | Description | Type     | Default |
+| -------- | ----------- | -------- | ------- |
+| title    | Page title  | `string` | -       |
+
+### Options
+
+| Property         | Description                                                                | Type      | Default |
+| ---------------- | -------------------------------------------------------------------------- | --------- | ------- |
+| restoreOnUnmount | Whether to restore the previous page title when the component is unmounted | `boolean` | `false` |
+</file>
+
+<file path="packages/hooks/src/useToggle/index.en-US.md">
+---
+nav:
+  path: /hooks
+---
+
+# useToggle
+
+A hook that toggle states.
+
+## Examples
+
+### Default usage
+
+<code src="./demo/demo1.tsx" />
+
+### Advanced usage
+
+<code src="./demo/demo2.tsx" />
+
+## API
+
+```typescript
+const [state, { toggle, set, setLeft, setRight }] = useToggle(defaultValue?: boolean);
+
+const [state, { toggle, set, setLeft, setRight }] = useToggle<T>(defaultValue: T);
+
+const [state, { toggle, set, setLeft, setRight }] = useToggle<T, U>(defaultValue: T, reverseValue: U)
+```
+
+### Params
+
+| Property     | Description                 | Type | Default |
+| ------------ | --------------------------- | ---- | ------- |
+| defaultValue | The default value. Optional | `T`  | `false` |
+| reverseValue | The reverse value. Optional | `U`  | -       |
+
+### Result
+
+| Property | Description                            | Type      |
+| -------- | -------------------------------------- | --------- |
+| state    | Current state                          | -         |
+| actions  | A set of methods to update state value | `Actions` |
+
+### Actions
+
+| Property | Description                                                                                                   | Type                      |
+| -------- | ------------------------------------------------------------------------------------------------------------- | ------------------------- |
+| toggle   | Toggle state                                                                                                  | `() => void`              |
+| set      | Set state                                                                                                     | `(state: T \| U) => void` |
+| setLeft  | Set state to `defaultValue`                                                                                   | `() => void`              |
+| setRight | Set state to `reverseValue` if `reverseValue` is available. Otherwise set it to the reverse of `defaultValue` | `() => void`              |
+</file>
+
+<file path="packages/hooks/src/useTrackedEffect/index.en-US.md">
+---
+nav:
+  path: /hooks
+---
+
+# useTrackedEffect
+
+A hook of useEffect that allow us to track which dependencies caused the effect to trigger.
+
+## Examples
+
+### Basic usage
+
+<code src="./demo/demo1.tsx" />
+
+## API
+
+```typescript
+useTrackedEffect(
+  effect: (changes: [], previousDeps: [], currentDeps: []) => (void | (() => void | undefined)),
+  deps?: deps,
+)
+```
+
+The API is alike `React.useEffect`, but the first function will receive three parameters: `changes`, `previousDeps`, and `currentDeps`.
+
+- changes: Index of changed dependencies
+- previousDeps: Last deps
+- currentDeps: Current deps
+</file>
+
+<file path="packages/hooks/src/useUnmount/index.en-US.md">
+---
+nav:
+  path: /hooks
+---
+
+# useUnmount
+
+A hook that executes the function right before the component is unmounted.
+
+## Examples
+
+### Default Usage
+
+<code src="./demo/demo1.tsx" />
+
+## API
+
+```typescript
+useUnmount(fn: () => void);
+```
+
+### Params
+
+| Property | Description                 | Type         | Default |
+| -------- | --------------------------- | ------------ | ------- |
+| fn       | The function to be executed | `() => void` | -       |
+</file>
+
+<file path="packages/hooks/src/useUnmountedRef/index.en-US.md">
+---
+nav:
+  path: /hooks
+---
+
+# useUnmountedRef
+
+A Hook can be used to get whether the component is unmounted.
+
+## Examples
+
+### Default Usage
+
+<code src="./demo/demo1.tsx" />
+
+## API
+
+```typescript
+const unmountRef: { current: boolean } = useUnmountedRef();
+```
+
+### Result
+
+| Property   | Description                        | Type                   |
+| ---------- | ---------------------------------- | ---------------------- |
+| unmountRef | Whether the component is unmounted | `{ current: boolean }` |
+</file>
+
+<file path="packages/hooks/src/useUpdate/index.en-US.md">
+---
+nav:
+  path: /hooks
+---
+
+# useUpdate
+
+A hook that returns a function which can be used to force the component to re-render.
+
+## Examples
+
+### Default Usage
+
+<code src="./demo/demo1.tsx" />
+
+## API
+
+```typescript
+const update = useUpdate();
+```
+</file>
+
+<file path="packages/hooks/src/useUpdateEffect/index.en-US.md">
+---
+nav:
+  path: /hooks
+---
+
+# useUpdateEffect
+
+A hook alike `useEffect` but skips running the effect for the first time.
+
+## Examples
+
+### Basic usage
+
+<code src="./demo/demo1.tsx" />
+
+## API
+
+The API is exactly the same as `React.useEffect`.
+
+```typescript
+useUpdateEffect(
+  effect: React.EffectCallback,
+  deps?: React.DependencyList,
+)
+```
+</file>
+
+<file path="packages/hooks/src/useUpdateLayoutEffect/index.en-US.md">
+---
+nav:
+  path: /hooks
+---
+
+# useUpdateLayoutEffect
+
+A hook alike `useLayoutEffect` but skips running the effect for the first time.
+
+## Examples
+
+### Basic usage
+
+<code src="./demo/demo1.tsx" />
+
+## API
+
+The API is exactly the same as `React.useLayoutEffect`.
+
+```typescript
+useUpdateEffect(
+  effect: React.EffectCallback,
+  deps?: React.DependencyList,
+)
+```
+</file>
+
+<file path="packages/hooks/src/useVirtualList/index.en-US.md">
+---
+nav:
+  path: /hooks
+---
+
+# useVirtualList
+
+A hook that allows you to use virtual list to render huge chunks of list data.
+
+## Examples
+
+### Default usage
+
+<code src="./demo/demo1.tsx" />
+
+### Dynamic item height
+
+<code src="./demo/demo2.tsx" />
+
+## API
+
+```typescript
+const [list, scrollTo] = useVirtualList<T>(
+  originalList: T[],
+  options: {
+    containerTarget: (() => Element) | Element | MutableRefObject<Element>,
+    wrapperTarget: (() => Element) | Element | MutableRefObject<Element>,
+    itemHeight: number | ((index: number, data: T) => number),
+    overscan?: number,
+  }
+);
+```
+
+### Params
+
+| Property     | Description                                                                                                                                                | Type      | Default |
+| ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | --------- | ------- |
+| originalList | The original list that contains a lot of data entries. **Attention: must undergo useMemo processing or never change, otherwise there will be a dead loop** | `T[]`     | `[]`    |
+| options      | config                                                                                                                                                     | `Options` | -       |
+
+### Options
+
+| Property        | Description                                                             | Type                                                        | Default |
+| --------------- | ----------------------------------------------------------------------- | ----------------------------------------------------------- | ------- |
+| containerTarget | Outter Container，support DOM element or ref                            | `() => Element` \| `Element` \| `MutableRefObject<Element>` | -       |
+| wrapperTarget   | Inner Container，DOM element or ref                                     | `() => Element` \| `Element` \| `MutableRefObject<Element>` | -       |
+| itemHeight      | Item height, accept a pixel value or a function that returns the height | `number` \| `((index: number, data: T) => number)`          | -       |
+| overscan        | The extra buffer items outside of the view area                         | `number`                                                    | `5`     |
+
+### Result
+
+| Property | Description                                            | Type                           |
+| -------- | ------------------------------------------------------ | ------------------------------ |
+| list     | The current portion of data need to be rendered to DOM | `{ data: T, index: number }[]` |
+| scrollTo | Scroll to specific index                               | `(index: number) => void`      |
+</file>
+
+<file path="packages/hooks/src/useWebSocket/index.en-US.md">
+---
+nav:
+  path: /hooks
+---
+
+# useWebSocket
+
+A hook for WebSocket.
+
+## Examples
+
+### Default usage
+
+<code src="./demo/demo1.tsx" />
+
+## API
+
+```typescript
+enum ReadyState {
+  Connecting = 0,
+  Open = 1,
+  Closing = 2,
+  Closed = 3,
+}
+
+interface Options {
+  reconnectLimit?: number;
+  reconnectInterval?: number;
+  onOpen?: (event: WebSocketEventMap['open'], instance: WebSocket) => void;
+  onClose?: (event: WebSocketEventMap['close'], instance: WebSocket) => void;
+  onMessage?: (message: WebSocketEventMap['message'], instance: WebSocket) => void;
+  onError?: (event: WebSocketEventMap['error'], instance: WebSocket) => void;
+  protocols?: string | string[];
+}
+
+interface Result {
+  latestMessage?: WebSocketEventMap['message'];
+  sendMessage: WebSocket['send'];
+  disconnect: () => void;
+  connect: () => void;
+  readyState: ReadyState;
+  webSocketIns?: WebSocket;
+}
+
+useWebSocket(socketUrl: string, options?: Options): Result;
+```
+
+### Params
+
+| Property  | Description                    | Type      | Default |
+| --------- | ------------------------------ | --------- | ------- |
+| socketUrl | Required, webSocket url        | `string`  | -       |
+| options   | connect the configuration item | `Options` | -       |
+
+#### Options
+
+| Options Property  | Description                        | Type                                                                   | Default |
+| ----------------- | ---------------------------------- | ---------------------------------------------------------------------- | ------- |
+| onOpen            | The webSocket connect callback     | `(event: WebSocketEventMap['open'], instance: WebSocket) => void`      | -       |
+| onClose           | WebSocket close callback           | `(event: WebSocketEventMap['close'], instance: WebSocket) => void`     | -       |
+| onMessage         | WebSocket receive message callback | `(message: WebSocketEventMap['message'], instance: WebSocket) => void` | -       |
+| onError           | WebSocket error callback           | `(event: WebSocketEventMap['error'], instance: WebSocket) => void`     | -       |
+| reconnectLimit    | Retry times                        | `number`                                                               | `3`     |
+| reconnectInterval | Retry interval(ms)                 | `number`                                                               | `3000`  |
+| manual            | Manually starts connection         | `boolean`                                                              | `false` |
+| protocols         | Sub protocols                      | `string` \| `string[]`                                                 | -       |
+
+### Result
+
+| Options Property | Description                                                                            | Type                           |
+| ---------------- | -------------------------------------------------------------------------------------- | ------------------------------ |
+| latestMessage    | Latest message                                                                         | `WebSocketEventMap['message']` |
+| sendMessage      | Send message function                                                                  | `WebSocket['send']`            |
+| disconnect       | Disconnect webSocket manually                                                          | `() => void`                   |
+| connect          | Connect webSocket manually. If already connected, close the current one and reconnect. | `() => void`                   |
+| readyState       | Current webSocket connection status                                                    | `ReadyState`                   |
+| webSocketIns     | WebSocket instance                                                                     | `WebSocket`                    |
+</file>
+
+<file path="packages/hooks/src/useWhyDidYouUpdate/index.en-US.md">
+---
+nav:
+  path: /hooks
+---
+
+# useWhyDidYouUpdate
+
+Help developers troubleshoot what changes have caused component rerender.
+
+## Examples
+
+### Default usage
+
+<code src="./demo/demo1.tsx" />
+
+## API
+
+```typescript
+type IProps = Record<string, any>;
+
+useWhyDidYouUpdate(componentName: string, props: IProps): void;
+```
+
+### Params
+
+| Property      | Description                                                                                 | Type     | Default |
+| ------------- | ------------------------------------------------------------------------------------------- | -------- | ------- |
+| componentName | Required, the name of the observation component                                             | `string` | -       |
+| props         | Required, data to be observed (`state` or `props` and other data that may lead to rerender) | `object` | -       |
+
+### Result
+
+Please open the browser console, you can see the output of the changed observed `state` or `props`.
+</file>
+
+<file path="packages/use-url-state/use-url-state.en-US.md">
+---
+nav:
+  path: /hooks
+group:
+  path: /
+---
+
+# useUrlState
+
+A hook that store the state into url query.
+
+## Install
+
+```bash
+npm i @ahooksjs/use-url-state -S
+```
+
+> This hook relies on useLocation & useHistory & useNavigate from `react-router`, to use this hook, you need to ensure
+>
+> 1\. Your project is using `react-router` version 5.0 or 6.0 to manage routing
+>
+> 2\. Installed @ahooksjs/use-url-state
+
+## Usage
+
+```js
+import useUrlState from '@ahooksjs/use-url-state';
+```
+
+## Examples
+
+### CodeSandbox Demo
+
+React Router V5: https://codesandbox.io/s/suspicious-feather-cz4e0?file=/App.tsx
+
+React Router V6: https://codesandbox.io/s/autumn-shape-odrt9?file=/App.tsx
+
+### Default usage
+
+<code src="./demo/demo1.tsx" hideActions='["CSB"]' />
+
+### Multi-state management
+
+<code src="./demo/demo2.tsx" hideActions='["CSB"]' />
+
+### Multi-state management (split)
+
+<code src="./demo/demo4.tsx" hideActions='["CSB"]' />
+
+### Custom query-string options
+
+<code src="./demo/demo3.tsx" hideActions='["CSB"]' />
+
+## API
+
+```typescript
+const [state, setState] = useUrlState(baseState, options);
+```
+
+### Params
+
+| Property  | Description                                                                                    | Type           | Default |
+| --------- | ---------------------------------------------------------------------------------------------- | -------------- | ------- |
+| baseState | URL search params will be merged into BaseState | `S \| () => S` | -       |
+| options   | Url config                                                                                     | `Options`      | -       |
+
+### Options
+
+| Property         | Description                                                                                                 | Type                  | Default  |
+| ---------------- | ----------------------------------------------------------------------------------------------------------- | --------------------- | -------- |
+| navigateMode     | Type of history navigate mode                                                                               | `'push' \| 'replace'` | `'push'` |
+| parseOptions     | [parse](https://github.com/sindresorhus/query-string#parsestring-options) options of `query-string`         | `ParseOptions`        | -        |
+| stringifyOptions | [stringify](https://github.com/sindresorhus/query-string#stringifyobject-options) options of `query-string` | `StringifyOptions`    | -        |
+
+### Result
+
+| Property | Description                                  | Type                                              |
+| -------- | -------------------------------------------- | ------------------------------------------------- |
+| state    | Url query object                             | `object`                                          |
+| setState | Same as useState, but state should be object | `(state: S) => void \| (() => ((state: S) => S))` |
+</file>
+
+</files>
