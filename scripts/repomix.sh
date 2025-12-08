@@ -31,8 +31,40 @@ process_repo() {
     
     log_info "Processing repository: ${repo_name} (${repo_path})"
     
-    # Build output file path
-    local output_file="${OUTPUT_DIR}/${repo_name}.xml"
+    # Get latest commit ID from GitHub
+    log_info "Fetching latest commit ID..."
+    local latest_commit=$(get_latest_commit "$repo_path")
+    if [ $? -ne 0 ]; then
+        log_error "Failed to get commit ID for ${repo_path}, skipping cache check"
+        latest_commit=""
+    else
+        log_info "Latest commit: ${latest_commit}"
+    fi
+    
+    # Check for cached version
+    if [ -n "$latest_commit" ]; then
+        local cached_file=$(find_cached_file "$OUTPUT_DIR" "$repo_name")
+        
+        if [ -n "$cached_file" ]; then
+            local cached_commit=$(extract_commit_from_filename "$cached_file")
+            
+            if [ "$cached_commit" = "$latest_commit" ]; then
+                log_success "Using cached version (commit: ${latest_commit})"
+                log_success "Cached file: ${cached_file}"
+                return 0
+            else
+                log_info "Cache outdated (${cached_commit} → ${latest_commit}), re-downloading..."
+            fi
+        fi
+    fi
+    
+    # Build output file path with commit ID
+    local output_file
+    if [ -n "$latest_commit" ]; then
+        output_file="${OUTPUT_DIR}/${repo_name}.${latest_commit}.xml"
+    else
+        output_file="${OUTPUT_DIR}/${repo_name}.xml"
+    fi
     
     # Build and execute repomix command
     local command="npx repomix@latest --remote ${repo_path} --output ${output_file}"
@@ -47,6 +79,12 @@ process_repo() {
     if [ $? -eq 0 ]; then
         local end_time=$(date +%s)
         local duration=$((end_time - start_time))
+        
+        # Clean up old cached files
+        if [ -n "$latest_commit" ]; then
+            cleanup_old_cache "$OUTPUT_DIR" "$repo_name" "$latest_commit"
+        fi
+        
         log_success "Completed ${repo_name} in $(format_duration $duration)"
         log_success "Output: ${output_file}"
         return 0
