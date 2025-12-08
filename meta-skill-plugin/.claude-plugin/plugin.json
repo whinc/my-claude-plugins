@@ -1,8 +1,0 @@
-{
-  "name": "meta-skill-plugin",
-  "version": "1.0.0",
-  "description": "A meta-plugin for creating skills",
-  "skills": [
-    "./skills/skill-creator.md"
-  ]
-}

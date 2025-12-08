@@ -8,20 +8,16 @@
   },
   "plugins": [
     {
-      "name": "git-plugin",
-      "source": "./git-plugin"
-    },
-    {
-      "name": "meta-skill-plugin",
-      "source": "./meta-skill-plugin"
-    },
-    {
-      "name": "react-docs-plugin",
-      "source": "./react-docs-plugin"
+      "name": "git",
+      "source": "./plugins/git"
     },
     {
       "name": "react-hooks-library",
       "source": "./plugins/react-hooks-library"
+    },
+    {
+      "name": "taro",
+      "source": "./plugins/taro"
     }
   ]
 }
