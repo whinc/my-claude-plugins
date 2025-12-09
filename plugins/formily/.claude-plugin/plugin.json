@@ -1,0 +1,11 @@
+{
+  "name": "formily",
+  "version": "1.0.0",
+  "description": "Comprehensive guide for using Formily as a React form solution with TypeScript and Ant Design",
+  "author": {
+    "name": "Claude Code",
+    "email": "claude@anthropic.com"
+  },
+  "keywords": ["formily", "react", "forms", "antd", "typescript", "validation"],
+  "license": "MIT"
+}

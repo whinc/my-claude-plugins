@@ -25,42 +25,58 @@ Add this marketplace to Claude Code:
 ### Available Plugins
 
 
-#### 📝 git-plugin
+#### ⚛️ ahooks
+
+**Documentation and guidance for ahooks, a React Hooks library**
+
+**Installation:**
+```bash
+/plugin install ahooks
+```
+
+**Usage:**
+```bash
+No usage examples available
+```
+
+**Key Features:**
+- **📦 Version**: 1.0.0
+
+
+#### 🔌 formily
+
+**Comprehensive guide for using Formily as a React form solution with TypeScript and Ant Design**
+
+**Installation:**
+```bash
+/plugin install formily
+```
+
+**Usage:**
+```bash
+No usage examples available
+```
+
+**Key Features:**
+- **📦 Version**: 1.0.0
+
+
+#### 📝 git
 
 **Git utilities including Conventional Commits support**
 
 **Installation:**
 ```bash
-/plugin install git-plugin
+/plugin install git
 ```
 
 **Usage:**
 ```bash
-/git-plugin
+No usage examples available
 ```
 
 **Key Features:**
-- **⚡ Commands**: Powerful slash commands for automation
-- **📦 Version**: 1.0.0
-
-
-#### ⚛️ react-hooks-library
-
-**Documentation and guidance for popular React hooks libraries including ahooks**
-
-**Installation:**
-```bash
-/plugin install react-hooks-library
-```
-
-**Usage:**
-```bash
-skill: "ahooks"
-```
-
-**Key Features:**
-- **🎯 Skills**: Expert guidance and specialized workflows
-- **📦 Version**: 1.0.0
+- **📦 Version**: 1.0.2
 
 
 #### 🔷 taro
@@ -74,11 +90,10 @@ skill: "ahooks"
 
 **Usage:**
 ```bash
-skill: "taro-docs"
+No usage examples available
 ```
 
 **Key Features:**
-- **🎯 Skills**: Expert guidance and specialized workflows
 - **📦 Version**: 0.1.0
 
 
