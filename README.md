@@ -22,58 +22,12 @@ Add this marketplace to Claude Code:
 /plugin marketplace add whinc/my-claude-plugins
 ```
 
-> **Note**: Use the local path for development or replace with your repository URL when deploying.
-
 ### Available Plugins
 
-> **Note**: This marketplace offers both plugins (with slash commands) and skills (with specialized workflows). Plugins are installed once, while skills are invoked as needed.
-
----
-
-#### 🚀 meta-skill-plugin
-**Skill creation framework with comprehensive guidance**
-
-**Installation:**
-```bash
-/plugin install meta-skill-plugin
-```
-
-**Usage:**
-```bash
-skill: "skill-creator"
-```
-
-**Key Features:**
-- **📚 Skill Creation Framework**: 357-line comprehensive workflow for building effective skills
-- **🎯 Best Practices**: Token-efficient design principles and patterns
-- **🔧 Progressive Disclosure**: Organized content structure with minimal metadata + detailed references
-- **📋 Workflow Templates**: Proven patterns for different domains and use cases
-
----
-
-#### ⚛️ react-docs-plugin
-**React documentation specialist with ahooks expertise**
-
-**Installation:**
-```bash
-/plugin install react-docs-plugin
-```
-
-**Usage:**
-```bash
-skill: "ahooks"
-```
-
-**Key Features:**
-- **🎣 76+ React Hooks**: Complete ahooks library coverage across 9 categories
-- **📚 Comprehensive Documentation**: 8 specialized reference files for hooks, patterns, and best practices
-- **🔄 State Management**: Expertise in useEffect, useState, data fetching, and performance optimization
-- **💡 Real Examples**: Practical usage patterns and migration guidance
-
----
 
 #### 📝 git-plugin
-**Git utilities with Conventional Commits support**
+
+**Git utilities including Conventional Commits support**
 
 **Installation:**
 ```bash
@@ -82,17 +36,50 @@ skill: "ahooks"
 
 **Usage:**
 ```bash
-/commit
+/git-plugin
 ```
 
 **Key Features:**
-- **📋 Conventional Commits**: Create standardized commit messages that work with semantic versioning
-- **🧠 Smart Analysis**: Analyzes your changes to suggest appropriate commit types and scopes
-- **🎯 Interactive Prompting**: Guides you through creating proper commit messages
-- **⚡ Automated Detection**: Identifies feat/fix/docs/refactor based on file changes
+- **⚡ Commands**: Powerful slash commands for automation
+- **📦 Version**: 1.0.0
 
----
 
+#### ⚛️ react-hooks-library
+
+**Documentation and guidance for popular React hooks libraries including ahooks**
+
+**Installation:**
+```bash
+/plugin install react-hooks-library
+```
+
+**Usage:**
+```bash
+skill: "ahooks"
+```
+
+**Key Features:**
+- **🎯 Skills**: Expert guidance and specialized workflows
+- **📦 Version**: 1.0.0
+
+
+#### 🔷 taro
+
+**Provides Taro framework documentation and expertise for multi-platform development**
+
+**Installation:**
+```bash
+/plugin install taro
+```
+
+**Usage:**
+```bash
+skill: "taro-docs"
+```
+
+**Key Features:**
+- **🎯 Skills**: Expert guidance and specialized workflows
+- **📦 Version**: 0.1.0
 
 
 ## Resources

@@ -1,0 +1,25 @@
+{
+  "name": "my-claude-plugins",
+  "version": "1.0.0",
+  "description": "A curated collection of plugins that extend Claude Code's capabilities with custom commands and tools.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "update-readme": "node .claude/scripts/update-readme.mjs"
+  },
+  "dependencies": {
+    "zx": "^8.1.8"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/whinc/my-claude-plugins.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/whinc/my-claude-plugins/issues"
+  },
+  "homepage": "https://github.com/whinc/my-claude-plugins#readme"
+}
