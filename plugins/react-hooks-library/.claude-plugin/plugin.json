@@ -1,6 +1,0 @@
-{
-  "name": "react-hooks-library",
-  "version": "1.0.0",
-  "description": "Documentation and guidance for popular React hooks libraries including ahooks",
-  "skills": ["./skills/ahooks/SKILL.md"]
-}

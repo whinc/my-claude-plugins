@@ -12,8 +12,8 @@
       "source": "./plugins/git"
     },
     {
-      "name": "react-hooks-library",
-      "source": "./plugins/react-hooks-library"
+      "name": "ahooks",
+      "source": "./plugins/ahooks"
     },
     {
       "name": "taro",

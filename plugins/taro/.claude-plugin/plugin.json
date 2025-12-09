@@ -6,6 +6,5 @@
     "name": "Taro Plugin Developer",
     "email": "developer@example.com"
   },
-  "skills": ["./skills/taro-docs/SKILL.md"],
   "keywords": ["taro", "documentation", "multi-platform", "weapp", "mini-program"]
 }
