@@ -56,7 +56,11 @@ function generateKeyFeatures(plugin) {
 }
 
 // Generate plugin entry with template literals
-function generatePluginEntry(plugin) {
+function generatePluginEntry(plugin, useTable = false) {
+  if (useTable) {
+    return `| **${plugin.name}** | ${plugin.description || 'No description available'} | \`/plugin install ${plugin.name}\` | ${plugin.version || 'N/A'} |`
+  }
+
   return `
 #### ${plugin.emoji} ${plugin.name}
 
@@ -140,7 +144,7 @@ async function createBackup(readmePath) {
 }
 
 // Update README with plugin entries
-async function updateReadme(readmePath, pluginEntries, pluginCount) {
+async function updateReadme(readmePath, pluginEntries, pluginCount, useTable = false) {
   if (!(await $`test -f ${readmePath}`.nothrow()).ok) {
     console.error(`Error: README.md not found at ${readmePath}`)
     return false
@@ -174,6 +178,12 @@ async function updateReadme(readmePath, pluginEntries, pluginCount) {
 
     // Add empty line and plugin entries
     newContent.push('')
+
+    if (useTable) {
+      newContent.push('| Plugin | Description | Installation | Version |')
+      newContent.push('|--------|-------------|-------------|---------|')
+    }
+
     newContent.push(pluginEntries)
 
     if (nextSectionIndex !== -1) {
@@ -215,9 +225,14 @@ async function main() {
   const pluginsDir = `${pluginRoot}/plugins`
   const readmePath = `${pluginRoot}/README.md`
 
+  // Check for table display argument
+  const args = process.argv.slice(2)
+  const useTable = args.includes('table')
+
   console.log('🚀 Starting README update...')
   console.log(`📂 Working directory: ${pluginRoot}`)
   console.log(`📋 Plugins directory: ${pluginsDir}`)
+  console.log(`📊 Display format: ${useTable ? 'Table' : 'Cards'}`)
 
   // Create backup
   // await createBackup(readmePath)
@@ -238,17 +253,18 @@ async function main() {
 
   // Generate plugin entries
   console.log('📝 Generating plugin entries...')
-  const pluginEntries = plugins.map(generatePluginEntry).join('')
+  const pluginEntries = plugins.map(plugin => generatePluginEntry(plugin, useTable)).join('\n')
 
   // Update README
   console.log('🔄 Updating README.md...')
-  const success = await updateReadme(readmePath, pluginEntries, plugins.length)
+  const success = await updateReadme(readmePath, pluginEntries, plugins.length, useTable)
 
   if (success) {
     console.log('')
     console.log('✨ README Update Complete! ✨')
     console.log('===============================')
     console.log(`• Plugins processed: ${plugins.length}`)
+    console.log(`• Display format: ${useTable ? 'Table' : 'Cards'}`)
     console.log(`• Main README.md updated`)
     console.log(`• Timestamp: ${(await $`date '+%Y-%m-%d %H:%M:%S'`).toString().trim()}`)
     console.log('')
