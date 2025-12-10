@@ -14,8 +14,8 @@ description: 'Prompt and workflow for generating conventional commit messages us
 
 **Follow these steps:**
 
-1. Review your changes: !`git status`
-2. Inspect changes: !`git diff`
+1. Review your changes: `git status`
+2. Inspect changes: `git diff`
 3. Stage your changes: `git add <files>`
 4. Construct your commit message using the XML structure below
 5. Create your commit with: `git commit -m "your message"`
