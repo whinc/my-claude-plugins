@@ -1,5 +1,5 @@
 {
   "name": "git",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Git utilities including Conventional Commits support"
 }

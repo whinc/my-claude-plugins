@@ -28,7 +28,7 @@ Add this marketplace to Claude Code:
 |--------|-------------|-------------|---------|
 | **ahooks** | Documentation and guidance for ahooks, a React Hooks library | `/plugin install ahooks` | 1.0.0 |
 | **formily** | Comprehensive guide for using Formily as a React form solution with TypeScript and Ant Design | `/plugin install formily` | 1.0.0 |
-| **git** | Git utilities including Conventional Commits support | `/plugin install git` | 1.0.2 |
+| **git** | Git utilities including Conventional Commits support | `/plugin install git` | 1.0.5 |
 | **taro** | Provides Taro framework documentation and expertise for multi-platform development | `/plugin install taro` | 0.1.0 |
 ## Resources
 
