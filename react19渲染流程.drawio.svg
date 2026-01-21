@@ -1,0 +1,312 @@
+<mxfile host="65bd71144e">
+    <diagram id="react19-render-flow" name="React 19 渲染流程">
+        <mxGraphModel dx="828" dy="347" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1800" pageHeight="1000" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+
+                <!-- 标题 -->
+                <mxCell id="title" value="React 19 渲染流程" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=28;fontColor=#202124;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+                    <mxGeometry x="600" y="20" width="600" height="50" as="geometry"/>
+                </mxCell>
+
+                <!-- 阶段 1: 触发更新 (蓝色) -->
+                <mxCell id="phase1_bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#C6DAFC;strokeColor=#1A73E8;strokeWidth=3;sketch=1;curveFitting=1;jiggle=2;opacity=30;" parent="1" vertex="1">
+                    <mxGeometry x="50" y="100" width="280" height="600" as="geometry"/>
+                </mxCell>
+
+                <mxCell id="phase1_label" value="阶段 1&#xa;触发更新" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=16;fontColor=#0D47A1;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+                    <mxGeometry x="130" y="110" width="120" height="40" as="geometry"/>
+                </mxCell>
+
+                <mxCell id="trigger1" value="setState / useState" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#A8C7FA;strokeColor=#1A73E8;strokeWidth=2;fontSize=12;fontStyle=1;fontColor=#0D47A1;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+                    <mxGeometry x="80" y="170" width="220" height="60" as="geometry"/>
+                </mxCell>
+
+                <mxCell id="trigger2" value="Props 变化" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#A8C7FA;strokeColor=#1A73E8;strokeWidth=2;fontSize=12;fontStyle=1;fontColor=#0D47A1;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+                    <mxGeometry x="80" y="250" width="220" height="60" as="geometry"/>
+                </mxCell>
+
+                <mxCell id="trigger3" value="Context 变化" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#A8C7FA;strokeColor=#1A73E8;strokeWidth=2;fontSize=12;fontStyle=1;fontColor=#0D47A1;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+                    <mxGeometry x="80" y="330" width="220" height="60" as="geometry"/>
+                </mxCell>
+
+                <mxCell id="trigger4" value="useTransition / useDeferredValue" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#C6DAFC;strokeColor=#1A73E8;strokeWidth=2;fontSize=12;fontStyle=1;fontColor=#0D47A1;sketch=1;curveFitting=1;jiggle=2;dashed=1;" parent="1" vertex="1">
+                    <mxGeometry x="80" y="410" width="220" height="60" as="geometry"/>
+                </mxCell>
+
+                <mxCell id="create_update" value="创建 Update 对象" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#1A73E8;strokeColor=#1A73E8;strokeWidth=2;fontSize=12;fontStyle=1;fontColor=#FFFFFF;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+                    <mxGeometry x="90" y="500" width="200" height="50" as="geometry"/>
+                </mxCell>
+
+                <mxCell id="mark_update" value="标记 Fiber 节点更新" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#A8C7FA;strokeColor=#1A73E8;strokeWidth=2;fontSize=12;fontStyle=1;fontColor=#0D47A1;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+                    <mxGeometry x="80" y="580" width="220" height="50" as="geometry"/>
+                </mxCell>
+
+                <!-- 阶段 2: 调度 (黄色) -->
+                <mxCell id="phase2_bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FEEFC3;strokeColor=#E37400;strokeWidth=3;sketch=1;curveFitting=1;jiggle=2;opacity=30;" parent="1" vertex="1">
+                    <mxGeometry x="360" y="100" width="280" height="600" as="geometry"/>
+                </mxCell>
+
+                <mxCell id="phase2_label" value="阶段 2&#xa;Scheduler 调度" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=16;fontColor=#5D4200;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+                    <mxGeometry x="435" y="110" width="130" height="40" as="geometry"/>
+                </mxCell>
+
+                <mxCell id="schedule1" value="计算优先级" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FDE293;strokeColor=#E37400;strokeWidth=2;fontSize=12;fontStyle=1;fontColor=#5D4200;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+                    <mxGeometry x="390" y="200" width="220" height="60" as="geometry"/>
+                </mxCell>
+
+                <mxCell id="lane" value="Lane 模型" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FDE293;strokeColor=#E37400;strokeWidth=2;fontSize=12;fontStyle=1;fontColor=#5D4200;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+                    <mxGeometry x="390" y="280" width="220" height="60" as="geometry"/>
+                </mxCell>
+
+                <mxCell id="priority" value="优先级分类：&#xa;• Immediate (同步)&#xa;• UserBlocking (交互)&#xa;• Normal (默认)&#xa;• Low (低)&#xa;• Idle (空闲)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FEEFC3;strokeColor=#E37400;strokeWidth=2;fontSize=11;fontStyle=1;fontColor=#5D4200;align=left;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+                    <mxGeometry x="390" y="360" width="220" height="130" as="geometry"/>
+                </mxCell>
+
+                <mxCell id="task_queue" value="加入任务队列" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#E37400;strokeColor=#E37400;strokeWidth=2;fontSize=12;fontStyle=1;fontColor=#FFFFFF;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+                    <mxGeometry x="400" y="510" width="200" height="50" as="geometry"/>
+                </mxCell>
+
+                <mxCell id="schedule_callback" value="调度回调函数" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FDE293;strokeColor=#E37400;strokeWidth=2;fontSize=12;fontStyle=1;fontColor=#5D4200;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+                    <mxGeometry x="390" y="590" width="220" height="50" as="geometry"/>
+                </mxCell>
+
+                <!-- 阶段 3: Reconciler 协调 (红色) -->
+                <mxCell id="phase3_bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FAD2CF;strokeColor=#C5221F;strokeWidth=3;sketch=1;curveFitting=1;jiggle=2;opacity=30;" parent="1" vertex="1">
+                    <mxGeometry x="670" y="100" width="280" height="600" as="geometry"/>
+                </mxCell>
+
+                <mxCell id="phase3_label" value="阶段 3&#xa;Reconciler 协调" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=16;fontColor=#7F0000;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+                    <mxGeometry x="740" y="110" width="140" height="40" as="geometry"/>
+                </mxCell>
+
+                <mxCell id="begin_work" value="beginWork" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#C5221F;strokeColor=#C5221F;strokeWidth=2;fontSize=12;fontStyle=1;fontColor=#FFFFFF;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+                    <mxGeometry x="710" y="180" width="200" height="50" as="geometry"/>
+                </mxCell>
+
+                <mxCell id="fiber_tree" value="构建 Fiber 树" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F28B82;strokeColor=#C5221F;strokeWidth=2;fontSize=12;fontStyle=1;fontColor=#7F0000;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+                    <mxGeometry x="700" y="260" width="220" height="50" as="geometry"/>
+                </mxCell>
+
+                <mxCell id="process_node" value="处理组件节点：&#xa;• 函数组件&#xa;• 类组件&#xa;• Host 组件 (DOM)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FAD2CF;strokeColor=#C5221F;strokeWidth=2;fontSize=11;fontStyle=1;fontColor=#7F0000;align=left;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+                    <mxGeometry x="700" y="330" width="220" height="90" as="geometry"/>
+                </mxCell>
+
+                <mxCell id="hooks" value="执行 Hooks (useState, useEffect...)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F28B82;strokeColor=#C5221F;strokeWidth=2;fontSize=11;fontStyle=1;fontColor=#7F0000;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+                    <mxGeometry x="700" y="440" width="220" height="50" as="geometry"/>
+                </mxCell>
+
+                <mxCell id="reconcile_children" value="reconcileChildren" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#C5221F;strokeColor=#C5221F;strokeWidth=2;fontSize=12;fontStyle=1;fontColor=#FFFFFF;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+                    <mxGeometry x="710" y="510" width="200" height="50" as="geometry"/>
+                </mxCell>
+
+                <mxCell id="diff_algo" value="Diff 算法对比" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F28B82;strokeColor=#C5221F;strokeWidth=2;fontSize=12;fontStyle=1;fontColor=#7F0000;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+                    <mxGeometry x="700" y="590" width="220" height="50" as="geometry"/>
+                </mxCell>
+
+                <!-- 阶段 4: Render 渲染 (绿色) -->
+                <mxCell id="phase4_bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#CEEAD6;strokeColor=#188038;strokeWidth=3;sketch=1;curveFitting=1;jiggle=2;opacity=30;" parent="1" vertex="1">
+                    <mxGeometry x="980" y="100" width="280" height="600" as="geometry"/>
+                </mxCell>
+
+                <mxCell id="phase4_label" value="阶段 4&#xa;Render 渲染" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=16;fontColor=#0B5323;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+                    <mxGeometry x="1070" y="110" width="100" height="40" as="geometry"/>
+                </mxCell>
+
+                <mxCell id="complete_work" value="completeWork" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#188038;strokeColor=#188038;strokeWidth=2;fontSize=12;fontStyle=1;fontColor=#FFFFFF;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+                    <mxGeometry x="1020" y="180" width="200" height="50" as="geometry"/>
+                </mxCell>
+
+                <mxCell id="create_dom" value="创建/更新 DOM 节点" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#A8DAB5;strokeColor=#188038;strokeWidth=2;fontSize=12;fontStyle=1;fontColor=#0B5323;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+                    <mxGeometry x="1010" y="260" width="220" height="50" as="geometry"/>
+                </mxCell>
+
+                <mxCell id="update_props" value="更新 Props" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#A8DAB5;strokeColor=#188038;strokeWidth=2;fontSize=12;fontStyle=1;fontColor=#0B5323;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+                    <mxGeometry x="1010" y="330" width="220" height="50" as="geometry"/>
+                </mxCell>
+
+                <mxCell id="work_in_progress" value="构建 workInProgress 树" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#CEEAD6;strokeColor=#188038;strokeWidth=2;fontSize=12;fontStyle=1;fontColor=#0B5323;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+                    <mxGeometry x="1010" y="400" width="220" height="50" as="geometry"/>
+                </mxCell>
+
+                <mxCell id="effect_list" value="收集副作用 (Effect List)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#A8DAB5;strokeColor=#188038;strokeWidth=2;fontSize=12;fontStyle=1;fontColor=#0B5323;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+                    <mxGeometry x="1010" y="470" width="220" height="50" as="geometry"/>
+                </mxCell>
+
+                <mxCell id="clone_node" value="克隆 Fiber 节点" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#A8DAB5;strokeColor=#188038;strokeWidth=2;fontSize=12;fontStyle=1;fontColor=#0B5323;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+                    <mxGeometry x="1010" y="540" width="220" height="50" as="geometry"/>
+                </mxCell>
+
+                <mxCell id="finish_render" value="完成渲染阶段" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#CEEAD6;strokeColor=#188038;strokeWidth=2;fontSize=12;fontStyle=1;fontColor=#0B5323;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+                    <mxGeometry x="1010" y="610" width="220" height="50" as="geometry"/>
+                </mxCell>
+
+                <!-- 阶段 5: Commit 提交 (紫色) -->
+                <mxCell id="phase5_bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F0FE;strokeColor=#1967D2;strokeWidth=3;sketch=1;curveFitting=1;jiggle=2;opacity=30;" parent="1" vertex="1">
+                    <mxGeometry x="1290" y="100" width="280" height="600" as="geometry"/>
+                </mxCell>
+
+                <mxCell id="phase5_label" value="阶段 5&#xa;Commit 提交" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=16;fontColor=#0D47A1;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+                    <mxGeometry x="1375" y="110" width="110" height="40" as="geometry"/>
+                </mxCell>
+
+                <mxCell id="commit_before" value="Before Mutation&#xa;DOM 变更前" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D2E3FC;strokeColor=#1967D2;strokeWidth=2;fontSize=12;fontStyle=1;fontColor=#0D47A1;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+                    <mxGeometry x="1320" y="180" width="220" height="60" as="geometry"/>
+                </mxCell>
+
+                <mxCell id="get_snapshot" value="getSnapshotBeforeUpdate" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D2E3FC;strokeColor=#1967D2;strokeWidth=2;fontSize=11;fontStyle=1;fontColor=#0D47A1;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+                    <mxGeometry x="1320" y="260" width="220" height="40" as="geometry"/>
+                </mxCell>
+
+                <mxCell id="mutation" value="Mutation&#xa;DOM 操作" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#A8C7FA;strokeColor=#1967D2;strokeWidth=2;fontSize=12;fontStyle=1;fontColor=#0D47A1;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+                    <mxGeometry x="1320" y="320" width="220" height="60" as="geometry"/>
+                </mxCell>
+
+                <mxCell id="dom_operations" value="DOM 操作：&#xa;• 插入节点&#xa;• 更新节点&#xa;• 删除节点" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F0FE;strokeColor=#1967D2;strokeWidth=2;fontSize=11;fontStyle=1;fontColor=#0D47A1;align=left;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+                    <mxGeometry x="1320" y="400" width="220" height="80" as="geometry"/>
+                </mxCell>
+
+                <mxCell id="layout" value="Layout&#xa;DOM 变更后" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D2E3FC;strokeColor=#1967D2;strokeWidth=2;fontSize=12;fontStyle=1;fontColor=#0D47A1;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+                    <mxGeometry x="1320" y="500" width="220" height="60" as="geometry"/>
+                </mxCell>
+
+                <mxCell id="use_effect" value="useEffect / useLayoutEffect 执行" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D2E3FC;strokeColor=#1967D2;strokeWidth=2;fontSize=11;fontStyle=1;fontColor=#0D47A1;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+                    <mxGeometry x="1320" y="580" width="220" height="40" as="geometry"/>
+                </mxCell>
+
+                <mxCell id="component_did_mount" value="componentDidMount / DidUpdate" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E8F0FE;strokeColor=#1967D2;strokeWidth=2;fontSize=11;fontStyle=1;fontColor=#0D47A1;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+                    <mxGeometry x="1320" y="640" width="220" height="40" as="geometry"/>
+                </mxCell>
+
+                <!-- 浏览器绘制 (灰色) -->
+                <mxCell id="browser_bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F1F3F4;strokeColor=#5F6368;strokeWidth=3;sketch=1;curveFitting=1;jiggle=2;opacity=30;" parent="1" vertex="1">
+                    <mxGeometry x="50" y="730" width="1520" height="120" as="geometry"/>
+                </mxCell>
+
+                <mxCell id="browser_label" value="浏览器渲染" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=18;fontColor=#202124;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+                    <mxGeometry x="760" y="740" width="120" height="30" as="geometry"/>
+                </mxCell>
+
+                <mxCell id="reflow" value="重排 (Reflow)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#DADCE0;strokeColor=#5F6368;strokeWidth=2;fontSize=12;fontStyle=1;fontColor=#202124;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+                    <mxGeometry x="400" y="780" width="150" height="50" as="geometry"/>
+                </mxCell>
+
+                <mxCell id="repaint" value="重绘 (Repaint)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#DADCE0;strokeColor=#5F6368;strokeWidth=2;fontSize=12;fontStyle=1;fontColor=#202124;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+                    <mxGeometry x="600" y="780" width="150" height="50" as="geometry"/>
+                </mxCell>
+
+                <mxCell id="composite" value="合成 (Composite)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#DADCE0;strokeColor=#5F6368;strokeWidth=2;fontSize=12;fontStyle=1;fontColor=#202124;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+                    <mxGeometry x="800" y="780" width="150" height="50" as="geometry"/>
+                </mxCell>
+
+                <mxCell id="raster" value="光栅化 (Raster)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#DADCE0;strokeColor=#5F6368;strokeWidth=2;fontSize=12;fontStyle=1;fontColor=#202124;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+                    <mxGeometry x="1000" y="780" width="150" height="50" as="geometry"/>
+                </mxCell>
+
+                <mxCell id="display" value="显示到屏幕" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#BDC1C6;strokeColor=#5F6368;strokeWidth=2;fontSize=12;fontStyle=1;fontColor=#202124;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+                    <mxGeometry x="1200" y="780" width="150" height="50" as="geometry"/>
+                </mxCell>
+
+                <!-- 箭头连接 -->
+                <mxCell id="arrow1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;sketch=1;curveFitting=1;jiggle=2;html=1;strokeWidth=3;strokeColor=#5F6368;endArrow=classic;endFill=1;" parent="1" source="create_update" target="schedule_callback" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+
+                <mxCell id="arrow2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;sketch=1;curveFitting=1;jiggle=2;html=1;strokeWidth=3;strokeColor=#5F6368;endArrow=classic;endFill=1;" parent="1" source="schedule_callback" target="begin_work" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+
+                <mxCell id="arrow3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;sketch=1;curveFitting=1;jiggle=2;html=1;strokeWidth=3;strokeColor=#5F6368;endArrow=classic;endFill=1;" parent="1" source="diff_algo" target="complete_work" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+
+                <mxCell id="arrow4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;sketch=1;curveFitting=1;jiggle=2;html=1;strokeWidth=3;strokeColor=#5F6368;endArrow=classic;endFill=1;" parent="1" source="finish_render" target="commit_before" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+
+                <mxCell id="arrow5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;sketch=1;curveFitting=1;jiggle=2;html=1;strokeWidth=3;strokeColor=#5F6368;endArrow=classic;endFill=1;dashed=1;" parent="1" source="component_did_mount" target="reflow" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="1650" y="720"/>
+                            <mxPoint x="475" y="720"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+
+                <!-- React 19 新特性标注 -->
+                <mxCell id="features_box" value="React 19 新特性" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FAD2CF;strokeColor=#C5221F;strokeWidth=3;fontSize=14;fontStyle=1;fontColor=#7F0000;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+                    <mxGeometry x="50" y="880" width="1520" height="100" as="geometry"/>
+                </mxCell>
+
+                <mxCell id="feature1" value="✓ 并发渲染 (Concurrent Rendering)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontColor=#7F0000;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+                    <mxGeometry x="80" y="900" width="300" height="25" as="geometry"/>
+                </mxCell>
+
+                <mxCell id="feature2" value="✓ 自动批处理 (Automatic Batching)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontColor=#7F0000;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+                    <mxGeometry x="400" y="900" width="300" height="25" as="geometry"/>
+                </mxCell>
+
+                <mxCell id="feature3" value="✓ Transitions (优先级调度)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontColor=#7F0000;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+                    <mxGeometry x="720" y="900" width="300" height="25" as="geometry"/>
+                </mxCell>
+
+                <mxCell id="feature4" value="✓ Suspense 改进" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontColor=#7F0000;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+                    <mxGeometry x="1040" y="900" width="200" height="25" as="geometry"/>
+                </mxCell>
+
+                <mxCell id="feature5" value="✓ Server Components 支持" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontColor=#7F0000;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+                    <mxGeometry x="1260" y="900" width="280" height="25" as="geometry"/>
+                </mxCell>
+
+                <mxCell id="feature6" value="✓ useActionState / useFormStatus" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontColor=#7F0000;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+                    <mxGeometry x="80" y="935" width="300" height="25" as="geometry"/>
+                </mxCell>
+
+                <mxCell id="feature7" value="✓ 改进的错误处理" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontColor=#7F0000;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+                    <mxGeometry x="400" y="935" width="200" height="25" as="geometry"/>
+                </mxCell>
+
+                <mxCell id="feature8" value="✓ 优化的 diff 算法" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontColor=#7F0000;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+                    <mxGeometry x="620" y="935" width="200" height="25" as="geometry"/>
+                </mxCell>
+
+                <!-- 图例 -->
+                <mxCell id="legend_bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F1F3F4;strokeColor=#5F6368;strokeWidth=2;sketch=1;curveFitting=1;jiggle=2;opacity=50;" parent="1" vertex="1">
+                    <mxGeometry x="1600" y="100" width="180" height="250" as="geometry"/>
+                </mxCell>
+
+                <mxCell id="legend_title" value="图例" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=14;fontColor=#202124;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+                    <mxGeometry x="1660" y="110" width="60" height="25" as="geometry"/>
+                </mxCell>
+
+                <mxCell id="legend_user" value="用户/外部触发" style="ellipse;whiteSpace=wrap;html=1;fillColor=#A8C7FA;strokeColor=#1A73E8;strokeWidth=2;fontSize=10;fontStyle=1;fontColor=#0D47A1;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+                    <mxGeometry x="1620" y="150" width="140" height="30" as="geometry"/>
+                </mxCell>
+
+                <mxCell id="legend_process" value="处理步骤" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FDE293;strokeColor=#E37400;strokeWidth=2;fontSize=10;fontStyle=1;fontColor=#5D4200;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+                    <mxGeometry x="1620" y="195" width="140" height="25" as="geometry"/>
+                </mxCell>
+
+                <mxCell id="legend_action" value="动作/操作" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#188038;strokeColor=#188038;strokeWidth=2;fontSize=10;fontStyle=1;fontColor=#FFFFFF;sketch=1;curveFitting=1;jiggle=2;" parent="1" vertex="1">
+                    <mxGeometry x="1620" y="235" width="140" height="30" as="geometry"/>
+                </mxCell>
+
+                <mxCell id="legend_flow" value="数据流" style="edgeStyle=orthogonalEdgeStyle;rounded=1;sketch=1;curveFitting=1;jiggle=2;html=1;strokeWidth=3;strokeColor=#5F6368;endArrow=classic;endFill=1;" parent="1" edge="1">
+                    <mxGeometry x="1630" y="275" width="120" height="30" as="geometry">
+                        <mxPoint x="1630" y="290" as="sourcePoint"/>
+                        <mxPoint x="1750" y="290" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+
+                <mxCell id="legend_async" value="异步/低优先" style="edgeStyle=orthogonalEdgeStyle;rounded=1;sketch=1;curveFitting=1;jiggle=2;html=1;strokeWidth=3;strokeColor=#5F6368;endArrow=classic;endFill=1;dashed=1;" parent="1" edge="1">
+                    <mxGeometry x="1630" y="305" width="120" height="30" as="geometry">
+                        <mxPoint x="1630" y="320" as="sourcePoint"/>
+                        <mxPoint x="1750" y="320" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

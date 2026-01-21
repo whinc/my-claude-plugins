@@ -1,0 +1,9 @@
+{
+  "name": "drawio-generator",
+  "version": "1.0.0",
+  "description": "生成草图风格的 Draw.io 流程图文件",
+  "author": {
+    "name": "whinc",
+    "email": "whincwu@163.com"
+  }
+}
