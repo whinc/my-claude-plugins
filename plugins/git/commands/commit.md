@@ -12,6 +12,6 @@ description: Create a git commit following Conventional Commits specification
 
 ## Your task
 
-Based on the above changes, create a single git commit, following [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) which is a specification for adding human and machine readable meaning to commit messages. the languange used in commit message is determined by the rencent 10 commit message exclude merge commit.
+Based on the above changes, create a single git commit, following Conventional Commits specification. the languange used in commit message is determined by the rencent 5 commits exclude merge type commits.
 
 You have the capability to call multiple tools in a single response. Stage and create the commit using a single message. Do not use any other tools or do anything else. Do not send any other text or messages besides these tool calls.
