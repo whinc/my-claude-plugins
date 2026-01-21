@@ -1,7 +1,7 @@
 {
   "name": "my-claude-plugins",
   "description": "A marketplace for distributing Claude Code plugins",
-  "version": "1.0.0",
+  "version": "1.0.1",
    "owner": {
     "name": "whincwu",
     "email": "whincwu@163.com"
@@ -18,6 +18,10 @@
     {
       "name": "taro",
       "source": "./plugins/taro"
+    },
+    {
+      "name": "drawio-generator",
+      "source": "./plugins/drawio-generator"
     }
   ]
 }
